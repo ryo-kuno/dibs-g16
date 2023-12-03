@@ -14,7 +14,7 @@ NCPUS=32 # New standard, circa, 2020 (General queue)
 MEM=64GB # New standard, circa 2020
 QUEUE="" #default route
 TIME="71:58:02" # Two minutes to midnight :^)
-MODULE="gaussian/g16-c01-avx"
+MODULE="gaussian/g16-c01-avx2"
 TMPDIR=true
 SUBMIT=true
 
