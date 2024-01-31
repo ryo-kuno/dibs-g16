@@ -2,8 +2,8 @@
  Input=1_C5H5CN_B3LYP.gjf
  Output=1_C5H5CN_B3LYP.log
  Initial command:
- /apps/gaussian/g16-c01-avx2/g16/l1.exe "/tmp/pbs.8568808.pbs/Gau-1764053.inp" -scrdir="/tmp/pbs.8568808.pbs/"
- Entering Link 1 = /apps/gaussian/g16-c01-avx2/g16/l1.exe PID=   1764054.
+ /apps/gaussian/g16-c01-avx2/g16/l1.exe "/tmp/pbs.8638919.pbs/Gau-2406835.inp" -scrdir="/tmp/pbs.8638919.pbs/"
+ Entering Link 1 = /apps/gaussian/g16-c01-avx2/g16/l1.exe PID=   2406836.
   
  Copyright (c) 1988-2019, Gaussian, Inc.  All Rights Reserved.
   
@@ -76,7 +76,7 @@
  
  ******************************************
  Gaussian 16:  ES64L-G16RevC.01  3-Jul-2019
-                 3-Dec-2023 
+                22-Dec-2023 
  ******************************************
  %chk=1_C5H5CN_B3LYP.chk
  ----------------------------------------
@@ -1800,7 +1800,7 @@
  XXYZ=              0.0001 YYXZ=             -0.0000 ZZXY=              0.6981
  N-N= 2.441219614279D+02 E-N=-1.148261512011D+03  KE= 2.823789500541D+02
  Unable to Open any file for archive entry.
- 1\1\GINC-CX1-101-11-3\FOpt\RB3LYP\3-21G\C6H5N1\RK820\03-Dec-2023\0\\# 
+ 1\1\GINC-CX1-101-11-3\FOpt\RB3LYP\3-21G\C6H5N1\RK820\22-Dec-2023\0\\# 
  opt freq b3lyp/3-21g geom=connectivity\\Title Card Required\\0,1\C,0.1
  966174837,-1.7422554752,0.1692613793\H,1.2948281262,-1.7357189535,0.16
  52790647\H,-0.1522067194,-0.70089511,0.1651800234\C,-0.3539634948,-2.5
@@ -1816,15 +1816,11 @@
  The archive entry for this job was punched.
 
 
- THERE ONCE WAS A GIRL NAMED IRENE,
- WHO LIVED ON DISTILLED KEROSENE,
-      BUT SHE STARTED ABSORBIN'
-      A NEW HYDROCARBON,
- AND SINCE THEN HAS NEVER BENZENE.
- Job cpu time:       0 days  0 hours  1 minutes 30.7 seconds.
- Elapsed time:       0 days  0 hours  1 minutes 30.9 seconds.
+ I WANT IT ALL - RICH, THIN, AND CHOCOLATE.
+ Job cpu time:       0 days  0 hours  1 minutes 30.2 seconds.
+ Elapsed time:       0 days  0 hours  1 minutes 30.0 seconds.
  File lengths (MBytes):  RWF=      6 Int=      0 D2E=      0 Chk=      2 Scr=      1
- Normal termination of Gaussian 16 at Sun Dec  3 18:02:04 2023.
+ Normal termination of Gaussian 16 at Fri Dec 22 00:17:33 2023.
  Link1:  Proceeding to internal job step number  2.
  -----------------------------------------------------------------
  #N Geom=AllCheck Guess=TCheck SCRF=Check GenChk RB3LYP/3-21G Freq
@@ -2695,7 +2691,7 @@
 
  ----------------------------------------------------------------------
  Unable to Open any file for archive entry.
- 1\1\GINC-CX1-101-11-3\Freq\RB3LYP\3-21G\C6H5N1\RK820\03-Dec-2023\0\\#N
+ 1\1\GINC-CX1-101-11-3\Freq\RB3LYP\3-21G\C6H5N1\RK820\22-Dec-2023\0\\#N
   Geom=AllCheck Guess=TCheck SCRF=Check GenChk RB3LYP/3-21G Freq\\Title
   Card Required\\0,1\C,0.1966174837,-1.7422554752,0.1692613793\H,1.2948
  281262,-1.7357189535,0.1652790647\H,-0.1522067194,-0.70089511,0.165180
@@ -2845,9 +2841,10 @@
  The archive entry for this job was punched.
 
 
- I KNOW YOU BELIEVE YOU UNDERSTAND WHAT YOU THINK I SAID,
- BUT I AM NOT SURE YOU REALIZE THAT WHAT YOU HEARD IS NOT WHAT I MEANT.
- Job cpu time:       0 days  0 hours  1 minutes  9.0 seconds.
- Elapsed time:       0 days  0 hours  1 minutes  9.2 seconds.
+ A true friend is someone who is there for
+ you when he'd rather be anywhere else.
+                               -- Len Wein
+ Job cpu time:       0 days  0 hours  1 minutes  8.8 seconds.
+ Elapsed time:       0 days  0 hours  1 minutes  8.9 seconds.
  File lengths (MBytes):  RWF=     13 Int=      0 D2E=      0 Chk=      2 Scr=      1
- Normal termination of Gaussian 16 at Sun Dec  3 18:03:16 2023.
+ Normal termination of Gaussian 16 at Fri Dec 22 00:18:42 2023.

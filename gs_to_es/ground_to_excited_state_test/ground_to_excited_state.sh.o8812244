@@ -1,0 +1,4 @@
+ground_to_excited_state.gjf
+/apps/gaussian/g16-c01-avx2/g16/g16
+finished ground_to_excited_state.gjf
+/var/spool/PBS/mom_priv/jobs/8812244.pbs.SC: line 11: /rds/general/user/rk820/home: Is a directory

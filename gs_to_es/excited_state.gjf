@@ -1,0 +1,7 @@
+%oldchk=1_C5H5CN_CAM-B3LYP.chk
+%chk=excited_state.chk
+#p td=(nstates=5) cam-b3lyp/6-31+G(d) geom=check guess=read
+
+Excited State Calculation for Herzberg-Teller Analysis
+
+0 1

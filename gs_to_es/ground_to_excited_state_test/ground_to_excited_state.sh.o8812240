@@ -1,0 +1,5 @@
+ground_to_excited_state.gjf
+/apps/gaussian/g16-c01-avx2/g16/g16
+/var/spool/PBS/mom_priv/jobs/8812240.pbs.SC: line 9: /rds/general/user/rk820/home/ground_to_excited_state/ground_to_excited_state.gjf: No such file or directory
+finished ground_to_excited_state.gjf
+/var/spool/PBS/mom_priv/jobs/8812240.pbs.SC: line 11: /rds/general/user/rk820/home: Is a directory
