@@ -1,0 +1,12 @@
+
+%oldchk=/rds/general/user/rk820/home/dibs-g16/fc_ht/exercise_8-7/Acrolein_TD.chk
+%chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/exercise_8-7/Acrolein_es.chk
+%NProcShared=32
+%Mem=110GB
+
+# cam-b3lyp/tzvp Opt Freq=SaveNormalModes geom=check
+
+Excited state optimization and frequency calculation, to be followed by FC-HT analysis.
+
+0 1
+

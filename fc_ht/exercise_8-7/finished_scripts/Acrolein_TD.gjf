@@ -1,0 +1,11 @@
+%oldchk=/rds/general/user/rk820/home/dibs-g16/fc_ht/exercise_8-7/Acrolein_gs.chk
+%chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/exercise_8-7/Acrolein_TD.chk
+%NProcShared=32
+%Mem=110GB
+
+# cam-b3lyp/tzvp td=(nstates=5) geom=check
+
+TD-DFT for Acrolein, calculating the first five excited states.
+
+0 1
+

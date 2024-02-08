@@ -1,0 +1,11 @@
+%oldchk=/rds/general/user/rk820/home/dibs-g16/fc_ht/exercise_8-7/DPB_gs_opt_cpu.chk
+%chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/exercise_8-7/DPB_gs_freq_cpu.chk
+%NProcShared=32
+%Mem=110GB
+
+# B3LYP/TZVP Freq geom=check
+
+Ground state calculation for DPB molecule, later to be used for excited state and FC-HT analysis. Step two, frequency calculation,following optimization.
+
+0 1
+

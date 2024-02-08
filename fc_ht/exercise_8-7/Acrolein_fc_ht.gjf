@@ -1,0 +1,13 @@
+%oldchk=/rds/general/user/rk820/home/dibs-g16/fc_ht/exercise_8-7/Acrolein_gs.chk                                                 
+%chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/exercise_8-7/Acrolein_fc_ht.chk
+
+# B3LYP/TZVP Freq(ReadFC, FC, ReadFCHT) NoSymm Geom=Checkpoint Guess=Read
+
+FC-HT for Acrolein, using gs and es opt and freq checkpoints.
+
+0 1
+
+SpecHwHm= SpecRes= InpDEner=
+
+/rds/general/user/rk820/home/dibs-g16/fc_ht/exercise_8-7/Acrolein_es.chk
+
