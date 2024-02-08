@@ -132,7 +132,7 @@ do
     cat > "$SCRIPT_FILE" << EOF
 #!/bin/sh
 #PBS -l walltime=${TIME}
-#PBS -l select=1:ncpus=${NCPUS}:mem=${MEM}:gpfs=false
+#PBS -l select=1:ncpus=${NCPUS}:mem=${MEM}
 
 module load "${MODULE}" 
 EOF
