@@ -2,8 +2,8 @@
  Input=Acrolein_TD.gjf
  Output=Acrolein_TD.log
  Initial command:
- /apps/gaussian/g16-c01-avx2/g16/l1.exe "/var/tmp/pbs.8849540.pbs/Gau-3548247.inp" -scrdir="/var/tmp/pbs.8849540.pbs/"
- Entering Link 1 = /apps/gaussian/g16-c01-avx2/g16/l1.exe PID=   3548248.
+ /apps/gaussian/g16-c01-avx2/g16/l1.exe "/var/tmp/pbs.8908838.pbs/Gau-761814.inp" -scrdir="/var/tmp/pbs.8908838.pbs/"
+ Entering Link 1 = /apps/gaussian/g16-c01-avx2/g16/l1.exe PID=    761815.
   
  Copyright (c) 1988-2019, Gaussian, Inc.  All Rights Reserved.
   
@@ -76,7 +76,7 @@
  
  ******************************************
  Gaussian 16:  ES64L-G16RevC.01  3-Jul-2019
-                 2-Feb-2024 
+                11-Feb-2024 
  ******************************************
  %oldchk=/rds/general/user/rk820/home/dibs-g16/fc_ht/exercise_8-7/Acrolein_gs.chk
  %chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/exercise_8-7/Acrolein_TD.chk
@@ -282,53 +282,53 @@
  Ground to excited state transition densities written to RWF  633
  Ground to excited state transition electric dipole moments (Au):
        state          X           Y           Z        Dip. S.      Osc.
-         1         0.0000      0.0000     -0.0506      0.0026      0.0002
+         1        -0.0000     -0.0000     -0.0506      0.0026      0.0002
          2        -1.1478     -1.1871      0.0000      2.7267      0.4341
-         3         0.0000     -0.0000     -0.0114      0.0001      0.0000
-         4         0.0000      0.0000      0.0586      0.0034      0.0007
-         5        -0.0000      0.0000      0.1155      0.0133      0.0027
+         3        -0.0000     -0.0000     -0.0114      0.0001      0.0000
+         4        -0.0000     -0.0000      0.0586      0.0034      0.0007
+         5         0.0000      0.0000      0.1155      0.0133      0.0027
  Ground to excited state transition velocity dipole moments (Au):
        state          X           Y           Z        Dip. S.      Osc.
-         1        -0.0000     -0.0000      0.0034      0.0000      0.0001
-         2         0.2624      0.2604      0.0000      0.1367      0.3816
+         1         0.0000      0.0000      0.0034      0.0000      0.0001
+         2         0.2624      0.2604     -0.0000      0.1367      0.3816
          3         0.0000      0.0000      0.0052      0.0000      0.0001
-         4        -0.0000     -0.0000     -0.0207      0.0004      0.0010
-         5         0.0000     -0.0000     -0.0397      0.0016      0.0034
+         4         0.0000      0.0000     -0.0207      0.0004      0.0010
+         5        -0.0000     -0.0000     -0.0397      0.0016      0.0034
  Ground to excited state transition magnetic dipole moments (Au):
        state          X           Y           Z
-         1        -0.7200     -0.5532      0.0000
-         2        -0.0000     -0.0000     -0.1838
+         1        -0.7200     -0.5532     -0.0000
+         2         0.0000      0.0000     -0.1838
          3        -1.0984     -0.5345     -0.0000
-         4        -0.1371     -0.6809      0.0000
+         4        -0.1371     -0.6809     -0.0000
          5         0.0262     -0.3977     -0.0000
  Ground to excited state transition velocity quadrupole moments (Au):
        state          XX          YY          ZZ          XY          XZ          YZ
-         1         0.0000      0.0000      0.0000     -0.0000      0.0336     -0.0430
-         2         0.2743      0.2190      0.0638      0.3783     -0.0000     -0.0000
+         1         0.0000     -0.0000     -0.0000     -0.0000      0.0336     -0.0430
+         2         0.2743      0.2190      0.0638      0.3783     -0.0000      0.0000
          3         0.0000      0.0000      0.0000      0.0000      0.0918     -0.1715
-         4         0.0000      0.0000      0.0000     -0.0000      0.1130     -0.0352
+         4         0.0000      0.0000      0.0000      0.0000      0.1130     -0.0352
          5        -0.0000     -0.0000     -0.0000     -0.0000      0.1041      0.0384
  <0|del|b> * <b|rxdel|0> + <0|del|b> * <b|delr+rdel|0>
  Rotatory Strengths (R) in cgs (10**-40 erg-esu-cm/Gauss)
        state          XX          YY          ZZ    R(velocity)    E-M Angle
-         1         0.0000      0.0000      0.0000      0.0000       90.00
-         2        -0.0000     -0.0000     -0.0000     -0.0000       90.00
+         1        -0.0000     -0.0000     -0.0000     -0.0000       90.00
+         2         0.0000      0.0000      0.0000      0.0000       90.00
          3        -0.0000     -0.0000     -0.0000     -0.0000       90.00
-         4         0.0000      0.0000      0.0000      0.0000       90.00
-         5         0.0000      0.0000      0.0000      0.0000       90.00
+         4        -0.0000     -0.0000     -0.0000     -0.0000       90.00
+         5         0.0000     -0.0000      0.0000      0.0000       90.00
  1/2[<0|r|b>*<b|rxdel|0> + (<0|rxdel|b>*<b|r|0>)*]
  Rotatory Strengths (R) in cgs (10**-40 erg-esu-cm/Gauss)
        state          XX          YY          ZZ     R(length)
-         1         0.0000      0.0000      0.0000      0.0000
-         2        -0.0000     -0.0000      0.0000     -0.0000
-         3         0.0000     -0.0000     -0.0000      0.0000
-         4         0.0000      0.0000     -0.0000      0.0000
-         5         0.0000      0.0000      0.0000      0.0000
+         1        -0.0000     -0.0000     -0.0000     -0.0000
+         2         0.0000      0.0000      0.0000      0.0000
+         3        -0.0000     -0.0000     -0.0000     -0.0000
+         4        -0.0000     -0.0000      0.0000     -0.0000
+         5        -0.0000      0.0000      0.0000      0.0000
   1/2[<0|del|b>*<b|r|0> + (<0|r|b>*<b|del|0>)*] (Au)
        state          X           Y           Z        Dip. S.   Osc.(frdel)
          1        -0.0000     -0.0000     -0.0002      0.0002      0.0001
-         2        -0.3012     -0.3091      0.0000      0.6103      0.4069
-         3         0.0000     -0.0000     -0.0001      0.0001      0.0000
+         2        -0.3012     -0.3091     -0.0000      0.6103      0.4069
+         3        -0.0000     -0.0000     -0.0001      0.0001      0.0000
          4        -0.0000     -0.0000     -0.0012      0.0012      0.0008
          5        -0.0000     -0.0000     -0.0046      0.0046      0.0031
 
@@ -456,7 +456,7 @@
  Symmetry A'   KE= 1.852477832102D+02
  Symmetry A"   KE= 5.832420447489D+00
  Unable to Open any file for archive entry.
- 1\1\GINC-CX3-7-2\SP\RCAM-B3LYP TD-FC\TZVP\C3H4O1\RK820\02-Feb-2024\0\\
+ 1\1\GINC-CX3-1-5\SP\RCAM-B3LYP TD-FC\TZVP\C3H4O1\RK820\11-Feb-2024\0\\
  # cam-b3lyp/tzvp td=(nstates=5) geom=check\\TD-DFT for Acrolein, calcu
  lating the first five excited states.\\0,1\O,0,-3.839649328,0.69646939
  81,-0.268587595\C,0,-5.0478350543,0.7595851661,-0.2663835439\H,0,-5.66
@@ -468,10 +468,14 @@
  The archive entry for this job was punched.
 
 
- DEMOCRATS BUY MOST OF THE BOOKS THAT HAVE BEEN
- BANNED; REPUBLICANS FORM CENSORSHIP COMMITTEES AND
- READ THEM AS A GROUP.
- Job cpu time:       0 days  0 hours  3 minutes  8.0 seconds.
- Elapsed time:       0 days  0 hours  0 minutes  6.8 seconds.
+      THE ONE-EYED VIEW OF OUR UNIVERSE SAYS YOU MUST NOT LOOK
+      FAR AFIELD FOR PROBLEMS.  SUCH PROBLEMS MAY NEVER ARRIVE. 
+      INSTEAD, TEND TO THE WOLF WITHIN YOUR FENCES.
+      THE PACKS RANGING OUTSIDE MAY NOT EVEN EXIST.
+
+                              -- THE AZHAR BOOK SHAMRA I:4
+                                 CHILDREN OF DUNE, BY FRANK HERBERT
+ Job cpu time:       0 days  0 hours  3 minutes 11.6 seconds.
+ Elapsed time:       0 days  0 hours  0 minutes  6.9 seconds.
  File lengths (MBytes):  RWF=    107 Int=      0 D2E=      0 Chk=     16 Scr=      1
- Normal termination of Gaussian 16 at Fri Feb  2 23:21:56 2024.
+ Normal termination of Gaussian 16 at Sun Feb 11 20:48:13 2024.
