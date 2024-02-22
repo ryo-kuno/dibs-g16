@@ -1,9 +1,9 @@
-%oldchk=/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/formaldehyde.chk
+%oldchk=/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/formaldehyde_CAM-B3LYP.chk
 %chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/formaldehyde_es_CAM-B3LYP_freq.chk
 
-#p CAM-B3LYP/TZVP TD=(nstates=2) geom=check Density=Current opt freq
+# CAM-B3LYP/TZVP TD=(nstates=2) geom=check Density=Current opt freq
 
-HF/STO-3G for formaldehyde, calculating the first two excited states and optimizing its geometry, followed by a vibrational analysis.
+CAM-B3LYP, TD-DFT for formaldehyde, calculating the first two excited states and optimizing its geometry, followed by a vibrational analysis.
 
 0 1
 
