@@ -1,0 +1,3 @@
+cp: cannot stat '/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/./CH2O_STO-3G_linked.gjf': No such file or directory
+/var/spool/PBS/mom_priv/jobs/8973252.pbs.SC: line 12: 2004061 Segmentation fault      g16 CH2O_STO-3G_linked.gjf
+cp: cannot stat '*.log': No such file or directory

@@ -1,16 +1,16 @@
 #!/bin/sh
 #PBS -l walltime=00:10:00
-#PBS -l select=1:ncpus=32:mem=128GB
+#PBS -l select=1:ncpus=1:mem=8GB
 
 module load "gaussian/g16-c01-avx2" 
-cp "/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/./formaldehyde_es_CAM-B3LYP.chk" ./
-cp "/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/./formaldehyde_es_CAM-B3LYP.gjf" ./
+cp "/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/./formaldehyde_es_STO-3G_opt.chk" ./
+cp "/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/./formaldehyde_es_STO-3G_opt.gjf" ./
 
 #convert old checkpoints to latest (i.e. for g03 checkpoints generated before ~Dec 2009)
-#c8609 "formaldehyde_es_CAM-B3LYP.chk"
+#c8609 "formaldehyde_es_STO-3G.chk"
 
 # no more pbsexec... running directly.
-g16 formaldehyde_es_CAM-B3LYP.gjf
+g16 formaldehyde_es_STO-3G_opt.gjf
 
 cp *.log  /rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/./ 
 cp *.chk  /rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/./

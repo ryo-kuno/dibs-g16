@@ -1,0 +1,7 @@
+%oldchk=/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/ch2o_cis_S1_opt.chk
+%chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/ch2o_cis_S1_freq.chk
+#p freq cis(root=1)/sto-3g geom=check
+
+ch2o S1 freq from optimised geometry
+
+0 1

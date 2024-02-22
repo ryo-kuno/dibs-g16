@@ -1,0 +1,16 @@
+%oldchk=/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/ch2o_hf_S0_opt.chk
+%chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/es_opt_test1.chk
+#p cis(root=1)/sto-3g geom=connectivity opt
+
+ch2o ground state opt
+
+0 1
+ C                  0.00000000    0.00000000   -0.53382200
+ H                  0.00000000   -0.92614900   -1.12944500
+ H                  0.00000000    0.92614900   -1.12944500
+ O                  0.00000000    0.00000000    0.68272700
+
+ 1 2 1.0 3 1.0 4 2.0
+ 2
+ 3
+ 4

@@ -1,0 +1,9 @@
+%oldchk=/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/formaldehyde.chk
+%chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/test1.chk
+
+# CIS/STO-3G CIS=(nstates=2, Root=1) geom=check Density=Current Opt
+
+HF/STO-3G for formaldehyde, calculating the first two excited states and optimizing its geometry.
+
+0 1
+

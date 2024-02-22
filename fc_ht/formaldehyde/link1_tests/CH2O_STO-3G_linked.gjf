@@ -1,0 +1,47 @@
+%chk=STO-3G_job1
+
+#p hf/sto-3g geom=connectivity Opt Freq
+
+Ground state optimization and frequency calculation for formaldehyde
+
+0 1
+ C                 -0.52226814   -0.40421304    0.00000000
+ H                  0.01290043   -1.33076287    0.00000000
+ H                 -1.59226812   -0.40440770    0.00000000
+ O                  0.10673358    0.68570778    0.00000000
+
+ 1 2 1.0 3 1.0 4 2.0
+ 2
+ 3
+ 4
+
+--Link1--
+%oldchk=STO-3G_job1
+%chk=STO-3G_job2
+
+#p CIS/STO-3G CIS=(nstates=2, Root=1) geom=check Density=Current
+
+HF/STO-3G for formaldehyde, calculating the first two excited states and looking at the first one.
+
+0 1
+
+--Link1--
+%oldchk=STO-3G_job2
+%chk=STO-3G_job3
+
+#p CIS/STO-3G geom=check Density=Current Opt
+
+HF/STO-3G for formaldehyde, optimizing its first excited state geometry.
+
+0 1
+
+--Link1--
+%oldchk=STO-3G_job3
+%chk=STO-3G_job4
+
+#p CIS/STO-3G geom=check Density=Current Freq
+
+HF/STO-3G for formaldehyde, performing a frequency calculation on the first excited state.
+
+0 1
+

@@ -1,0 +1,2 @@
+cp: cannot stat '/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/./formaldehyde_es_STO-3G_opt.chk': No such file or directory
+cp: cannot stat '*.chk': No such file or directory

@@ -2,4 +2,4 @@
  Input=formaldehyde_es_CAM-B3LYP.gjf
  Output=formaldehyde_es_CAM-B3LYP.log
  Initial command:
- /apps/gaussian/g16-c01-avx2/g16/l1.exe "/var/tmp/pbs.8969614.pbs/Gau-929831.inp" -scrdir="/var/tmp/pbs.8969614.pbs/"
+ /apps/gaussian/g16-c01-avx2/g16/l1.exe "/var/tmp/pbs.8972002.pbs/Gau-1941977.inp" -scrdir="/var/tmp/pbs.8972002.pbs/"
