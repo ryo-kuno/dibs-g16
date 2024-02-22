@@ -1,0 +1,173 @@
+ Entering Gaussian System, Link 0=g16
+ Initial command:
+ /apps/gaussian/g09_c01/g09/l1.exe "/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/Gau-587952.inp" -scrdir="/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/"
+ Entering Link 1 = /apps/gaussian/g09_c01/g09/l1.exe PID=    587953.
+  
+ Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2009,2011,
+            Gaussian, Inc.  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 09 program.  It is based on
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 09, Revision C.01,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, B. Mennucci, 
+ G. A. Petersson, H. Nakatsuji, M. Caricato, X. Li, H. P. Hratchian, 
+ A. F. Izmaylov, J. Bloino, G. Zheng, J. L. Sonnenberg, M. Hada, 
+ M. Ehara, K. Toyota, R. Fukuda, J. Hasegawa, M. Ishida, T. Nakajima, 
+ Y. Honda, O. Kitao, H. Nakai, T. Vreven, J. A. Montgomery, Jr., 
+ J. E. Peralta, F. Ogliaro, M. Bearpark, J. J. Heyd, E. Brothers, 
+ K. N. Kudin, V. N. Staroverov, T. Keith, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. Rendell, J. C. Burant, S. S. Iyengar, J. Tomasi, 
+ M. Cossi, N. Rega, J. M. Millam, M. Klene, J. E. Knox, J. B. Cross, 
+ V. Bakken, C. Adamo, J. Jaramillo, R. Gomperts, R. E. Stratmann, 
+ O. Yazyev, A. J. Austin, R. Cammi, C. Pomelli, J. W. Ochterski, 
+ R. L. Martin, K. Morokuma, V. G. Zakrzewski, G. A. Voth, 
+ P. Salvador, J. J. Dannenberg, S. Dapprich, A. D. Daniels, 
+ O. Farkas, J. B. Foresman, J. V. Ortiz, J. Cioslowski, 
+ and D. J. Fox, Gaussian, Inc., Wallingford CT, 2010.
+ 
+ ******************************************
+ Gaussian 09:  EM64L-G09RevC.01 23-Sep-2011
+                22-Feb-2024 
+ ******************************************
+ %oldchk=/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/formaldehyde.ch
+ k
+ %chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/formaldehyde_es_ST
+ O-3G.chk
+ Copying data from "/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/formaldehyde.chk" to current chk file "/rds/
+ general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/formaldehyde_es_STO-3G.chk".
+ ------------------------------------------
+ # HF/STO-3G CIS=(nstates=2) geom=check opt
+ ------------------------------------------
+ 1/18=20,19=15,29=2,38=1/1,3;
+ 2/9=110,12=2,40=1/2;
+ 3/6=3,11=9,14=-4,16=1,25=1,30=1,71=1/1,2,8,3;
+ 4//1;
+ 5/5=2,38=5/2;
+ 8/6=1,10=1,108=2/1,4;
+ 9/15=2,41=2,42=3/14;
+ 10/5=4/2;
+ 6/7=2,8=2,9=2,10=2/1;
+ 7/12=6,13=5/1,2,3,16;
+ 1/18=20,19=15/3(2);
+ 2/9=110/2;
+ 99//99;
+ 2/9=110/2;
+ 3/6=3,11=9,14=-2,16=1,25=1,30=1,71=1/1,2,8,3;
+ 4/5=5,16=3/1;
+ 5/5=2,38=5/2;
+ 8/6=1,10=1,108=2/1,4;
+ 9/15=2,41=2,42=3,49=4/14;
+ 10/5=4/2;
+ 7/12=6,13=5/1,2,3,16;
+ 1/18=20,19=15/3(-8);
+ 2/9=110/2;
+ 6/7=2,8=2,9=2,10=2/1;
+ 99//99;
+ ----------------------------------------------------------------------
+ HF/STO-3G for formaldehyde, calculating the first two excited states a
+ nd optimizing its geometry.
+ ----------------------------------------------------------------------
+ Structure from the checkpoint file:  /rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/formaldehyde_es_STO-3G.chk
+ FileIO operation on non-existent file.
+FileIO: IOper= 2 IFilNo(1)=-20997 Len=          20 IPos=           0 Q=  140724995067280
+
+
+ dumping /fiocom/, unit = 1 NFiles =    13 SizExt =    524288 WInBlk =   1048576
+                   defal = T LstWrd =    14680064 FType=2 FMxFil=10000
+
+ Number         501        502        598        989        991        992        993        994
+ Base       7340032   11534336   12582912    8388608   10485760    9437184    6291456    1048576
+ End        7341032   11538441   12582914    8408608   10492322    9437193    6291656    1048606
+ End1       8388608   12582912   13631488    9437184   11534336   10485760    7340032    2097152
+ Wr Pntr    7340032   11534440   12582912    8388608   10485760    9437184    6291456    1048576
+ Rd Pntr    7340032   11534336   12582912    8388608   10492322    9437193    6291656    1048606
+ Length        1000       4105          2      20000       6562          9        200         30
+
+ Number         995        996        997        998        999
+ Base       5242880    3145728    4194304    2097152   13631488
+ End        5242900    3145928    4194378    2097352   13733992
+ End1       6291456    4194304    5242880    3145728   14680064
+ Wr Pntr    5242880    3145728    4194304    2097152   13631488
+ Rd Pntr    5242900    3145928    4194375    2097352   13633992
+ Length          20        200         74        200     102504
+
+
+ dumping /fiocom/, unit = 2 NFiles =     1 SizExt =         0 WInBlk =   1048576
+                   defal = F LstWrd =     2097152 FType=2 FMxFil=10000
+
+ Number           0
+ Base       1048576
+ End        2097152
+ End1       2097152
+ Wr Pntr    1048576
+ Rd Pntr    1048576
+ Length     1048576
+
+
+ dumping /fiocom/, unit = 3 NFiles =     1 SizExt =    524288 WInBlk =   1048576
+                   defal = T LstWrd =     2097152 FType=2 FMxFil=10000
+
+ Number           0
+ Base       1048576
+ End        2097152
+ End1       2097152
+ Wr Pntr    1048576
+ Rd Pntr    1048576
+ Length     1048576
+ Error termination in NtrErr:
+ NtrErr Called from FileIO.
+Error: segmentation violation
+   rax 0000000000000000, rbx 0000000000a20780, rcx 00001484eedf855b
+   rdx 0000000000000000, rsp 00007ffd17578ba8, rbp 00007ffd17578bd0
+   rsi 000000000000000b, rdi 000000000008f8b1, r8  0000000010001000
+   r9  00001484ef954400, r10 0000000000000006, r11 0000000000000202
+   r12 00007ffd17578ef8, r13 00007ffd17578d70, r14 0000000000a42790
+   r15 00007ffd17578d90
+  --- traceback not available

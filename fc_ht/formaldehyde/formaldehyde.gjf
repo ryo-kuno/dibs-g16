@@ -1,7 +1,6 @@
 %chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/formaldehyde.chk
-# hf/sto-3g geom=connectivity Opt Freq
-#NProcShared=1
-#Mem=6GB
+
+# hf/sto-3g Opt Freq
 
 Ground state optimization and frequency calculation for formaldehyde
 
@@ -15,4 +14,3 @@ Ground state optimization and frequency calculation for formaldehyde
  2
  3
  4
-
