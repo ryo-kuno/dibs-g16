@@ -2,8 +2,8 @@
  Input=formaldehyde.gjf
  Output=formaldehyde.log
  Initial command:
- /apps/gaussian/g16-c01-avx2/g16/l1.exe "/var/tmp/pbs.8966764.pbs/Gau-1023904.inp" -scrdir="/var/tmp/pbs.8966764.pbs/"
- Entering Link 1 = /apps/gaussian/g16-c01-avx2/g16/l1.exe PID=   1023906.
+ /apps/gaussian/g16-c01-avx2/g16/l1.exe "/var/tmp/pbs.8968500.pbs/Gau-1353963.inp" -scrdir="/var/tmp/pbs.8968500.pbs/"
+ Entering Link 1 = /apps/gaussian/g16-c01-avx2/g16/l1.exe PID=   1353964.
   
  Copyright (c) 1988-2019, Gaussian, Inc.  All Rights Reserved.
   
@@ -76,9 +76,9 @@
  
  ******************************************
  Gaussian 16:  ES64L-G16RevC.01  3-Jul-2019
-                21-Feb-2024 
+                22-Feb-2024 
  ******************************************
- %chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/formaldehyde.chk
+ %chk=formaldehyde.chk
  --------------------------------------
  # hf/sto-3g geom=connectivity Opt Freq
  --------------------------------------
@@ -372,7 +372,7 @@
  One-electron integrals computed using PRISM.
  NBasis=    12 RedAO= T EigKep=  2.38D-01  NBF=     7     0     2     3
  NBsUse=    12 1.00D-06 EigRej= -1.00D+00 NBFU=     7     0     2     3
- Initial guess from the checkpoint file:  "/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/formaldehyde.chk"
+ Initial guess from the checkpoint file:  "formaldehyde.chk"
  B after Tr=     0.000000   -0.000000    0.000000
          Rot=    1.000000   -0.000000   -0.000000    0.000000 Ang=   0.00 deg.
  Initial guess orbital symmetries:
@@ -511,7 +511,7 @@
  One-electron integrals computed using PRISM.
  NBasis=    12 RedAO= T EigKep=  2.41D-01  NBF=     7     0     2     3
  NBsUse=    12 1.00D-06 EigRej= -1.00D+00 NBFU=     7     0     2     3
- Initial guess from the checkpoint file:  "/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/formaldehyde.chk"
+ Initial guess from the checkpoint file:  "formaldehyde.chk"
  B after Tr=    -0.000000    0.000000   -0.000000
          Rot=    1.000000   -0.000000   -0.000000   -0.000000 Ang=   0.00 deg.
  Initial guess orbital symmetries:
@@ -650,7 +650,7 @@
  One-electron integrals computed using PRISM.
  NBasis=    12 RedAO= T EigKep=  2.41D-01  NBF=     7     0     2     3
  NBsUse=    12 1.00D-06 EigRej= -1.00D+00 NBFU=     7     0     2     3
- Initial guess from the checkpoint file:  "/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/formaldehyde.chk"
+ Initial guess from the checkpoint file:  "formaldehyde.chk"
  B after Tr=     0.000000    0.000000    0.000000
          Rot=    1.000000    0.000000    0.000000   -0.000000 Ang=   0.00 deg.
  Initial guess orbital symmetries:
@@ -832,7 +832,7 @@
  Symmetry B1   KE= 3.565959611508D+00
  Symmetry B2   KE= 6.848189099119D+00
  Unable to Open any file for archive entry.
- 1\1\GINC-CX3-7-2\FOpt\RHF\STO-3G\C1H2O1\RK820\21-Feb-2024\0\\# hf/sto-
+ 1\1\GINC-CX3-7-2\FOpt\RHF\STO-3G\C1H2O1\RK820\22-Feb-2024\0\\# hf/sto-
  3g geom=connectivity Opt Freq\\Ground state optimization and frequency
   calculation for formaldehyde\\0,1\C,-0.5018872686,-0.3688974972,0.\H,
  0.0025477186,-1.3477056253,0.\H,-1.6017582726,-0.4218482504,0.\O,0.106
@@ -843,12 +843,16 @@
  The archive entry for this job was punched.
 
 
- NATURE REVEALS EVERY SECRET ONCE.
-                    - RALPH WALDO EMERSON
- Job cpu time:       0 days  0 hours  0 minutes  2.0 seconds.
- Elapsed time:       0 days  0 hours  0 minutes  2.1 seconds.
+ CHARLIE BROWN -- WHICH DO YOU THINK LASTS LONGER IN LIFE, THE GOOD THINGS 
+                  OR THE BAD THINGS?
+ LINUS --         GOOD THINGS LAST EIGHT SECONDS ..
+                  BAD THINGS LAST THREE WEEKS
+ CHARLIE BROWN -- WHAT ABOUT IN BETWEEN?
+ SNOOPY --        IN BETWEEN YOU SHOULD TAKE A NAP ...
+ Job cpu time:       0 days  0 hours  0 minutes  3.6 seconds.
+ Elapsed time:       0 days  0 hours  0 minutes  3.5 seconds.
  File lengths (MBytes):  RWF=      6 Int=      0 D2E=      0 Chk=     16 Scr=      1
- Normal termination of Gaussian 16 at Wed Feb 21 18:50:16 2024.
+ Normal termination of Gaussian 16 at Thu Feb 22 02:33:02 2024.
  Link1:  Proceeding to internal job step number  2.
  ---------------------------------------------------------------
  #N Geom=AllCheck Guess=TCheck SCRF=Check GenChk RHF/STO-3G Freq
@@ -866,7 +870,7 @@
  7/8=1,10=1,25=1/1,2,3,16;
  1/10=4,30=1/3;
  99//99;
- Structure from the checkpoint file:  "/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/formaldehyde.chk"
+ Structure from the checkpoint file:  "formaldehyde.chk"
  --------------------------------------------------------------------
  Ground state optimization and frequency calculation for formaldehyde
  --------------------------------------------------------------------
@@ -951,7 +955,7 @@
  One-electron integrals computed using PRISM.
  NBasis=    12 RedAO= T EigKep=  2.41D-01  NBF=     7     0     2     3
  NBsUse=    12 1.00D-06 EigRej= -1.00D+00 NBFU=     7     0     2     3
- Initial guess from the checkpoint file:  "/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/formaldehyde.chk"
+ Initial guess from the checkpoint file:  "formaldehyde.chk"
  B after Tr=    -0.000000   -0.000000    0.000000
          Rot=    1.000000    0.000000   -0.000000    0.000000 Ang=   0.00 deg.
  Initial guess orbital symmetries:
@@ -1345,7 +1349,7 @@
 
  ----------------------------------------------------------------------
  Unable to Open any file for archive entry.
- 1\1\GINC-CX3-7-2\Freq\RHF\STO-3G\C1H2O1\RK820\21-Feb-2024\0\\#N Geom=A
+ 1\1\GINC-CX3-7-2\Freq\RHF\STO-3G\C1H2O1\RK820\22-Feb-2024\0\\#N Geom=A
  llCheck Guess=TCheck SCRF=Check GenChk RHF/STO-3G Freq\\Ground state o
  ptimization and frequency calculation for formaldehyde\\0,1\C,-0.50188
  72686,-0.3688974972,0.\H,0.0025477186,-1.3477056253,0.\H,-1.6017582726
@@ -1381,13 +1385,10 @@
  The archive entry for this job was punched.
 
 
- CLIMB THE MOUNTAINS AND GET THEIR GOOD TIDINGS.
- NATURE'S PEACE WILL FLOW INTO YOU AS SUNSHINE FLOWS INTO TREES.
- THE WINDS WILL BLOW THEIR OWN FRESHNESS INTO YOU, 
- AND CARES WILL DROP OFF LIKE AUTUMN LEAVES.
-
-                                         -- JOHN MUIR
- Job cpu time:       0 days  0 hours  0 minutes  0.9 seconds.
- Elapsed time:       0 days  0 hours  0 minutes  0.9 seconds.
+ I WISH TO HAVE NO CONNECTION WITH ANY SHIP THAT DOES NOT SAIL FAST,
+ FOR I INTEND TO GO IN HARM'S WAY.
+     -- JOHN PAUL JONES, USN 1747-1792
+ Job cpu time:       0 days  0 hours  0 minutes  1.0 seconds.
+ Elapsed time:       0 days  0 hours  0 minutes  1.0 seconds.
  File lengths (MBytes):  RWF=      6 Int=      0 D2E=      0 Chk=     16 Scr=      1
- Normal termination of Gaussian 16 at Wed Feb 21 18:50:20 2024.
+ Normal termination of Gaussian 16 at Thu Feb 22 02:33:06 2024.
