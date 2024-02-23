@@ -1,0 +1,19 @@
+%chk=manual_displacement_CAM-B3LYP.chk
+%NProcShared=32
+%Mem=110GB
+
+# TD(Root=1) geom=connectivity opt freq
+
+Re-optimization and frequency calculation for first excited state computed by TD/CAM-B3LYP
+
+0 1
+ C                  0.06560000    0.00000000   -0.61338000
+ H                 -0.28700000   -0.95720200   -1.14172800
+ H                 -0.28700000    0.95720200   -1.14172800
+ O                 -0.01230000    0.00000000    0.74546700
+
+ 1 2 1.0 3 1.0 4 1.0
+ 2
+ 3
+ 4
+

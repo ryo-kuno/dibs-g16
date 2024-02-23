@@ -1,0 +1,19 @@
+%chk=manual_displacement_6-31G.chk
+%NProcShared=32
+%Mem=110GB
+
+# CIS(Root=1)/6-31g* geom=connectivity Density=Current Opt Freq
+
+Re-optimization and frequency calculation of manually displaced first excited state
+
+0 1
+ C                 -0.07650000    0.00000000   -0.56328100
+ H                  0.31500000   -0.94294200   -1.09061800
+ H                  0.31500000    0.94294200   -1.09061800
+ O                  0.01800000    0.00000000    0.69511500
+
+ 1 2 1.0 3 1.0 4 2.0
+ 2
+ 3
+ 4
+
