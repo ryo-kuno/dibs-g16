@@ -1,6 +1,6 @@
 #!/bin/sh
-#PBS -l walltime=01:00:00
-#PBS -l select=1:ncpus=32:mem=128GB
+#PBS -l walltime=00:10:00
+#PBS -l select=1:ncpus=1:mem=8GB
 
 module load "gaussian/g16-c01-avx2" 
 cp "/rds/general/user/rk820/home/dibs-g16/fc_ht/formaldehyde/link1_tests/CAM-B3LYP/./CH2O_CAM-B3LYP_linked.gjf" ./
