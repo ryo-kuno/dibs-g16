@@ -1,0 +1,39 @@
+%chk=Acrolein1.chk
+%NProcShared=32
+%Mem=110GB
+
+#p CAM-B3LYP/TZVP geom=connectivity Opt Freq
+
+Ground state optimization and frequency calculation for acrolein, to be followed up by TD-DFT, excited state opt and freq, and FC-HT analysis.
+
+0 1
+ O                 -3.79868478    0.69625735   -0.26859500
+ C                 -5.05708478    0.69625735   -0.26859500
+ H                 -5.59575098   -0.22770026   -0.30086031
+ C                 -5.82444195    2.03064546   -0.22199714
+ H                 -5.28577575    2.95460307   -0.18973183
+ C                 -7.17961803    2.03869234   -0.22171614
+ H                 -7.72376767    1.11794951   -0.25386918
+ H                 -7.70726050    2.96898157   -0.18922972
+
+ 1 2 2.0
+ 2 3 1.0 4 1.0
+ 3
+ 4 5 1.0 6 2.0
+ 5
+ 6 7 1.0 8 1.0
+ 7
+ 8
+
+--Link1--
+%oldchk=Acrolein1.chk
+%chk=Acrolein2.chk
+%NProcShared=32
+%Mem=110GB
+
+#p CAM-B3LYP/TZVP TD=(nstates=2, Root=1) geom=check Density=Current Opt Freq
+
+Calculating the first two vertically excited states within the ground state optimized geometry, optimized and subjected to a frequency calculation.
+
+0 1
+
