@@ -31,9 +31,38 @@ Ground state optimization and frequency calculation for acrolein, to be followed
 %NProcShared=32
 %Mem=110GB
 
-#p CAM-B3LYP/TZVP TD=(nstates=2, Root=1) geom=check Density=Current Opt Freq
+#p CAM-B3LYP/TZVP TD=(nstates=2, Root=1) geom=check Density=Current Opt Freq=SaveNormalModes
 
 Calculating the first two vertically excited states within the ground state optimized geometry, optimized and subjected to a frequency calculation.
 
 0 1
 
+--Link1--
+%chk=Acrolein1.chk
+%NProcShared=32
+%Mem=110GB
+
+#p CAM-B3LYP/TZVP Freq(ReadFC, FC, ReadFCHT) NoSymm geom=check guess=read
+
+FC simulation of UV absorption spectrum for Acrolein
+
+0 1
+
+SpecHwHm=500 SpecRes=20 InpDEner=0.118
+
+Acrolein2.chk
+
+--Link1--
+%chk=Acrolein1.chk
+%NProcShared=32
+%Mem=110GB
+
+#p CAM-B3LYP/TZVP Freq(ReadFC, FC, ReadFCHT, Emission) NoSymm geom=check guess=read
+
+FC simulation of UV emission spectrum for Acrolein
+
+0 1
+
+SpecHwHm=500 SpecRes=20 InpDEner=0.118
+
+Acrolein2.chk
