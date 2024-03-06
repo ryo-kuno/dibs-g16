@@ -1,0 +1,5 @@
+ Entering Gaussian System, Link 0=g16
+ Input=HPC_limit_DPB.gjf
+ Output=HPC_limit_DPB.log
+ Initial command:
+ /apps/gaussian/g16-c01-avx2/g16/l1.exe "/var/tmp/pbs.9035973.pbs/Gau-930348.inp" -scrdir="/var/tmp/pbs.9035973.pbs/"
