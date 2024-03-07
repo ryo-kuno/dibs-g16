@@ -1,10 +1,10 @@
 %chk=DPB1.chk
-%NProcShared=128
-%Mem=900GB
+%NProcShared=64
+%Mem=250GB
 
 #p CAM-B3LYP/TZVP SCRF(solvent=cyclohexane) geom=connectivity Opt Freq
 
-Ground state calculation for DPB molecule, later to be used for excited state and FC-HT analysis.
+Ground state calculation for DPB molecule, later to be used for excited state and FC-HT analysis.  
 
 0 1
  C                 -2.62765963    0.91489360    0.00000000
@@ -70,21 +70,81 @@ Ground state calculation for DPB molecule, later to be used for excited state an
  30
 
 --Link1--
-%oldchk=DPB1.chk
-%chk=DPB2.chk
-%NProcShared=128
-%Mem=900GB
+%chk=DPB_manualdisplacement.chk
+%NProcShared=64
+%Mem=250GB
 
-#p CAM-B3LYP/TZVP TD=(nstates=2, Root=1) SCRF(solvent=cyclohexane) geom=check density=current opt freq=savenormalmodes 
+#p CAM-B3LYP/TZVP SCRF(solvent=cyclohexane) geom=connectivity Opt Freq=savenormalmodes
 
-Calculating the vertical first excited state for DPB in cyclohexane and optimizing the structure, analyzing the frequency.
+Manually displaced S1 state of DPB in cyclohexane
 
 0 1
+ C                 -4.11864300    1.29910000    0.07039000
+ C                 -3.11639200    0.28954000   -0.00413500
+ C                 -3.56323600   -1.06262700   -0.07441100
+ C                 -4.90567500   -1.36281000   -0.06587300
+ C                 -5.86430700   -0.35264200    0.01727500
+ C                 -5.45372300    0.98256900    0.08325600
+ H                 -3.80775100    2.33712000    0.12316400
+ H                 -2.84214900   -1.86840900   -0.14432100
+ H                 -5.21982400   -2.39927000   -0.12294600
+ H                 -6.91785700   -0.59979000    0.02582800
+ H                 -6.19331400    1.77338100    0.14459700
+ C                 -1.75820800    0.65685700   -0.00402600
+ H                 -1.54258400    1.72119400    0.03113100
+ C                 -0.65856100   -0.21237300   -0.02180500
+ H                 -0.83715500   -1.28213800   -0.02596700
+ C                  0.65856100    0.21234400   -0.02223700
+ H                  0.83715100    1.28210900   -0.02680800
+ C                  1.75821300   -0.65687800   -0.00475300
+ H                  1.54260000   -1.72121700    0.03022900
+ C                  3.11639500   -0.28954600   -0.00470200
+ C                  4.11865500   -1.29909500    0.07015400
+ C                  3.56322500    1.06262400   -0.07495800
+ C                  5.45373200   -0.98255100    0.08360300
+ H                  3.80777400   -2.33711900    0.12277400
+ C                  4.90566000    1.36282200   -0.06583400
+ H                  2.84213100    1.86840000   -0.14551100
+ C                  5.86430200    0.35266400    0.01784900
+ H                  6.19333000   -1.77335600    0.14523000
+ H                  5.21979900    2.39928500   -0.12287300
+ H                  6.91785000    0.59982300    0.02691000
+
+ 1 2 1.5 6 2.0 7 1.0
+ 2 3 1.5 12 1.5
+ 3 4 2.0 8 1.0
+ 4 5 1.5 9 1.0
+ 5 6 1.5 10 1.0
+ 6 11 1.0
+ 7
+ 8
+ 9
+ 10
+ 11
+ 12 13 1.0 14 1.5
+ 13
+ 14 15 1.0 16 2.0
+ 15
+ 16 17 1.0 18 1.5
+ 17
+ 18 19 1.0 20 1.5
+ 19
+ 20 21 1.5 22 1.5
+ 21 23 2.0 24 1.0
+ 22 25 2.0 26 1.0
+ 23 27 1.5 28 1.0
+ 24
+ 25 27 1.5 29 1.0
+ 26
+ 27 30 1.0
+ 28
+ 29
+ 30
 
 --Link1--
 %chk=DPB1.chk
-%NProcShared=128
-%Mem=900GB
+%NProcShared=64
+%Mem=250GB
 
 #p CAM-B3LYP/TZVP Freq(ReadFC, FC, ReadFCHT) NoSymm SCRF(solvent=cyclohexane) geom=check guess=read 
 
@@ -94,12 +154,12 @@ FC analysis for simulated absorption spectra of DPB in cyclohexane
 
 SpecHwHm=400 SpecRes=20 InpDEner=0.133
 
-DPB2.chk
+DPB_manualdisplacement.chk
 
 --Link1--
 %chk=DPB1.chk
-%NProcShared=128
-%Mem=900GB
+%NProcShared=64
+%Mem=256GB
 
 #p CAM-B3LYP/TZVP Freq(ReadFC, FC, ReadFCHT, Emission) NoSymm SCRF(solvent=cyclohexane) geom=check guess=read 
 
@@ -109,4 +169,5 @@ FC analysis for simulated emission spectra of DPB in cyclohexane
 
 SpecHwHm=400 SpecRes=20 InpDEner=0.133
 
-DPB2.chk
+DPB_manualdisplacement.chk
+
