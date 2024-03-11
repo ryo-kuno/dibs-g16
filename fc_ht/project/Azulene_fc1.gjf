@@ -1,0 +1,29 @@
+%chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Azulene1-1.chk
+%NProcShared=128
+%Mem=250GB
+
+#p CAM-B3LYP/TZVP Freq(ReadFC, FC, ReadFCHT) NoSymm geom=check guess=read 
+
+FC analysis for simulated absorption spectra of Azulene
+
+0 1
+
+SpecHwHm=400 SpecRes=20 InpDEner=0.0768
+
+/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Azulene1-2.chk
+
+--Link1--
+%chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Azulene1-1.chk
+%NProcShared=128
+%Mem=250GB
+
+#p CAM-B3LYP/TZVP Freq(ReadFC, FC, ReadFCHT, Emission) NoSymm geom=check guess=read 
+
+FC analysis for simulated emission spectra of Azulene
+
+0 1
+
+SpecHwHm=400 SpecRes=20 InpDEner=0.0768
+
+/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Azulene1-2.chk
+

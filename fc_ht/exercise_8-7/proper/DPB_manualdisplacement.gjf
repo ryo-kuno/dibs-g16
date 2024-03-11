@@ -74,7 +74,7 @@ Ground state calculation for DPB molecule, later to be used for excited state an
 %NProcShared=64
 %Mem=250GB
 
-#p CAM-B3LYP/TZVP SCRF(solvent=cyclohexane) geom=connectivity Opt Freq=savenormalmodes
+#p CAM-B3LYP/TZVP TD=(nstates=2, Root=1) SCRF(solvent=cyclohexane) geom=connectivity Opt Freq=savenormalmodes
 
 Manually displaced S1 state of DPB in cyclohexane
 
@@ -152,7 +152,7 @@ FC analysis for simulated absorption spectra of DPB in cyclohexane
 
 0 1
 
-SpecHwHm=400 SpecRes=20 InpDEner=0.133
+SpecHwHm=250 SpecRes=20 InpDEner=0.133
 
 DPB_manualdisplacement.chk
 
@@ -167,7 +167,7 @@ FC analysis for simulated emission spectra of DPB in cyclohexane
 
 0 1
 
-SpecHwHm=400 SpecRes=20 InpDEner=0.133
+SpecHwHm=250 SpecRes=20 InpDEner=0.133
 
 DPB_manualdisplacement.chk
 
