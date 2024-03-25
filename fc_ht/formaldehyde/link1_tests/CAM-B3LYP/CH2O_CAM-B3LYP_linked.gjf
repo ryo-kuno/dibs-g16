@@ -1,4 +1,4 @@
-%chk=CAM-B3LYP_job1
+%chk=CAM-B3LYP_job1.chk
 %NProc=32
 %Mem=110GB
 
@@ -18,8 +18,8 @@ Ground state optimization and frequency calculation for formaldehyde
  4
 
 --Link1--
-%oldchk=CAM-B3LYP_job1
-%chk=CAM-B3LYP_job2
+%oldchk=CAM-B3LYP_job1.chk
+%chk=CAM-B3LYP_job2.chk
 %NProc=32
 %Mem=110GB
 
@@ -30,26 +30,54 @@ TD/CAM-B3LYP for formaldehyde, calculating the first two excited states and look
 0 1
 
 --Link1--
-%oldchk=CAM-B3LYP_job2
-%chk=CAM-B3LYP_job3
+%oldchk=CAM-B3LYP_job2.chk
+%chk=CAM-B3LYP_job3.chk
 %NProc=32
 %Mem=110GB
 
-#p CAM-B3LYP/TZVP TD=(nstates=2, Root=1) geom=check Density=Current Opt
+#p CAM-B3LYP/TZVP TD=(nstates=2, Root=1) geom=connectivity Density=Current Opt Freq=savenormalmodes
 
 TD/CAM-B3LYP for formaldehyde, optimizing its first excited state geometry.
 
 0 1
+ C                 -0.08160000    0.00000000   -0.57725200
+ H                  0.33600000   -0.95209700   -1.10514300
+ H                  0.33600000    0.95209700   -1.10514300
+ O                  0.01920000    0.00000000    0.70922500
+
+ 1 2 1.0 3 1.0 4 2.0
+ 2
+ 3
+ 4
 
 --Link1--
-%oldchk=CAM-B3LYP_job3
-%chk=CAM-B3LYP_job4
+%chk=CAM-B3LYP_job1.chk
 %NProc=32
 %Mem=110GB
 
-#p CAM-B3LYP/TZVP TD=(nstates=2, Root=1) geom=check Density=Current Freq
+#p CAM-B3LYP/TZVP Freq(ReadFC, FCHT, ReadFCHT) NoSymm geom=check guess=read
 
-TD/CAM-B3LYP for formaldehyde, performing a frequency calculation on the first excited state.
+absorption spectra for formaldehyde.
 
 0 1
+
+SpecHwHm=400 SpecRes=20 InpDEner=0.0768
+
+CAM-B3LYP_job3.chk
+
+--Link1--
+
+%chk=CAM-B3LYP_job1.chk
+%NProc=32
+%Mem=110GB
+
+#p CAM-B3LYP/TZVP Freq(ReadFC, FCHT, ReadFCHT, emission) NoSymm geom=check guess=read
+
+Emission spectra for formaldehyde.
+
+0 1
+
+SpecHwHm=400 SpecRes=20 InpDEner=0.0768
+
+CAM-B3LYP_job3.chk
 

@@ -1,5 +1,5 @@
 #!/bin/sh
-#PBS -l walltime=05:00:00
+#PBS -l walltime=07:58:59
 #PBS -l select=1:ncpus=128:mem=916GB
 
 module load "gaussian/g16-c01-avx2" 
