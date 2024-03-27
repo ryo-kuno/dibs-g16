@@ -1,4 +1,4 @@
-%chk=Naphthalene_n_1-1.chk
+%chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Naphthalene/Naphthalene_n_1-1.chk
 %NProcShared=32
 %Mem=250GB
 
@@ -8,5 +8,83 @@ Franck-Condon Analysis of neutral naphthalene for the absorption spectra.
 
 0 1
 
-SpecHwHm=400 SpecRes=20 InpDEner=
+SpecHwHm=400 SpecRes=20 InpDEner=0.150
+
+/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Naphthalene/Naphthalene_n_1-2.chk
+
+--Link1--
+%chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Naphthalene/Naphthalene_n_1-1.chk
+%NProcShared=32
+%Mem=250GB
+
+#p B3LYP/def2TZVP Freq(ReadFC, FC, ReadFCHT, emission) geom=check guess=read
+
+Franck-Condon Analysis of neutral naphthalene for the emission spectra.
+
+0 1
+
+SpecHwHm=400 SpecRes=20 InpDEner=0.150
+
+/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Naphthalene/Naphthalene_n_1-2.chk
+
+--Link1--
+%chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Naphthalene/Naphthalene_n_1-1.chk
+%NProcShared=32
+%Mem=250GB
+
+#p B3LYP/def2TZVP Freq(ReadFC, HT, ReadFCHT) geom=check guess=read
+
+Herzberg-Teller Analysis of neutral naphthalene for the absorption spectra.
+
+0 1
+
+SpecHwHm=400 SpecRes=20 InpDEner=0.150
+
+/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Naphthalene/Naphthalene_n_1-2.chk
+
+--Link1--
+%chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Naphthalene/Naphthalene_n_1-1.chk
+%NProcShared=32
+%Mem=250GB
+
+#p B3LYP/def2TZVP Freq(ReadFC, HT, ReadFCHT) geom=check guess=read
+
+Herzberg-Teller Analysis of neutral napthalene for the emission spectra.
+
+0 1
+
+SpecHwHm=400 SpecRes=20 InpDEner=0.150
+
+/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Naphthalene/Naphthalene_n_1-2.chk
+
+--Link1--
+%chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Naphthalene/Naphthalene_n_1-1.chk
+%NProcShared=32
+%Mem=250GB
+
+#p B3LYP/def2TZVP Freq(ReadFC, FCHT, ReadFCHT) geom=check guess=read
+
+Franck-Condon Herzberg-Teller Analysis of neutral naphthalene for the absorption spectra.
+
+0 1
+
+SpecHwHm=400 SpecRes=20 InpDEner=0.150
+
+/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Naphthalene/Naphthalene_n_1-2.chk
+
+--Link1--
+%chk=/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Naphthalene/Naphthalene_n_1-1.chk
+%NProcShared=32
+%Mem=250GB
+
+#p B3LYP/def2TZVP Freq(ReadFC, FCHT, ReadFCHT, emission) geom=check guess=read
+
+Franck-Condon Herzberg-Teller Analysis of neutral naphthalene for the emission spectra.
+
+0 1
+
+SpecHwHm=400 SpecRes=20 InpDEner=0.150
+
+/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Naphthalene/Naphthalene_n_1-2.chk
+
 
