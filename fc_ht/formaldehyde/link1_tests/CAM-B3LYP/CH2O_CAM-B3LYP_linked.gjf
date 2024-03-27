@@ -61,7 +61,7 @@ absorption spectra for formaldehyde.
 
 0 1
 
-SpecHwHm=400 SpecRes=20 InpDEner=0.0768
+SpecHwHm=400 SpecRes=20 InpDEner=0.13
 
 CAM-B3LYP_job3.chk
 
@@ -77,7 +77,7 @@ Emission spectra for formaldehyde.
 
 0 1
 
-SpecHwHm=400 SpecRes=20 InpDEner=0.0768
+SpecHwHm=400 SpecRes=20 InpDEner=0.13
 
 CAM-B3LYP_job3.chk
 

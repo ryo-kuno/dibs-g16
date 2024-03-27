@@ -1,0 +1,12 @@
+%chk=Naphthalene_n_1-1.chk
+%NProcShared=32
+%Mem=250GB
+
+#p B3LYP/def2TZVP Freq(ReadFC, FC, ReadFCHT) geom=check guess=read
+
+Franck-Condon Analysis of neutral naphthalene for the absorption spectra.
+
+0 1
+
+SpecHwHm=400 SpecRes=20 InpDEner=
+
