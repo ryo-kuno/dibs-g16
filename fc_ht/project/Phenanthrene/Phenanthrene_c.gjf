@@ -1,0 +1,131 @@
+%Mem=250GB
+%nprocshared=32
+%chk=Phenanthrene_c_1-1.chk
+
+#p opt freq b3lyp/def2tzvp geom=connectivity
+
+Ground state optimization and frequency calculation for cationic phenanthrene.
+
+1 2
+ C                 -5.04568857   -5.19936512   -0.00346100
+ C                 -3.66579757   -5.19936512   -0.00346100
+ C                 -2.94646157   -3.98272112   -0.00346100
+ C                 -3.64405057   -2.75082512   -0.00139100
+ C                 -5.05803557   -2.78068912   -0.00098200
+ C                 -5.74449757   -3.97925812   -0.00246900
+ C                 -1.51140957   -3.99120412   -0.00514100
+ C                 -2.89461857   -1.51413812    0.00008000
+ C                 -1.47977157   -1.56241312   -0.00173700
+ C                 -0.80808157   -2.83058912   -0.00482900
+ C                 -0.73404257   -0.36170212    0.00000000
+ H                  0.36499243   -0.41835812   -0.00141800
+ C                 -1.37266057    0.86148088    0.00368100
+ C                 -2.77766857    0.91628688    0.00560300
+ C                 -3.52253357   -0.24684012    0.00368600
+ H                 -1.00182357   -4.96697312   -0.00696600
+ H                 -5.60490957   -6.14628012   -0.00431500
+ H                 -3.10677857   -6.14730612   -0.00416700
+ H                 -5.62741757   -1.83971512    0.00032200
+ H                 -6.84459257   -3.98618112   -0.00274600
+ H                  0.29273543   -2.83106912   -0.00645800
+ H                 -0.79205257    1.79544388    0.00514800
+ H                 -3.28039357    1.89481088    0.00858400
+ H                 -4.62019257   -0.17773512    0.00532300
+
+ 1 2 2.0 6 1.5 17 1.0
+ 2 3 1.5 18 1.0
+ 3 4 1.5 7 1.5
+ 4 5 1.5 8 1.5
+ 5 6 2.0 19 1.0
+ 6 20 1.0
+ 7 10 2.0 16 1.0
+ 8 9 1.5 15 1.5
+ 9 10 1.5 11 1.5
+ 10 21 1.0
+ 11 12 1.0 13 2.0
+ 12
+ 13 14 1.5 22 1.0
+ 14 15 2.0 23 1.0
+ 15 24 1.0
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+
+--Link1--
+%Mem=250GB
+%NProcShared=32
+%oldchk=Phenanthrene_c_1-1.chk
+%chk=Phenanthrene_c_1-2.chk
+
+#p opt freq=savenormalmodes b3lyp/def2tzvp TD=(nstates=2, Root=1) geom=check                                                     
+
+Cationic phenanthrene TD-DFT excitation/optimization freq calculation.                                                            
+
+1 2
+
+--Link1--
+%chk=Phenanthrene_c_1-1.chk
+%NProcShared=32
+%Mem=250GB
+
+#p B3LYP/def2TZVP Freq(ReadFC, FC, ReadFCHT) geom=check guess=read
+
+Franck-Condon Analysis of cationic phenanthrene for the absorption spectra.
+
+1 2
+
+SpecHwHm=250 SpecRes=20 InpDEner=0.150
+
+Phenanthrene_c_1-2.chk
+
+--Link1--
+%chk=Phenanthrene_c_1-1.chk
+%NProcShared=32
+%Mem=250GB
+
+#p B3LYP/def2TZVP Freq(ReadFC, FC, ReadFCHT, emission) geom=check guess=read
+
+Franck-Condon Analysis of cationic phenanthrene for the emission spectra.
+
+1 2
+
+SpecHwHm=250 SpecRes=20 InpDEner=0.150
+
+Phenanthrene_c_1-2.chk
+
+--Link1--
+%chk=Phenanthrene_c_1-1.chk
+%NProcShared=32
+%Mem=250GB
+
+#p B3LYP/def2TZVP Freq(ReadFC, FCHT, ReadFCHT) geom=check guess=read
+
+Franck-Condon Herzberg-Teller Analysis of cationic phenanthrene for the absorption spectra.
+
+1 2
+
+SpecHwHm=250 SpecRes=20 InpDEner=0.150
+
+Phenanthrene_c_1-2.chk
+
+--Link1--
+%chk=Phenanthrene_c_1-1.chk
+%NProcShared=32
+%Mem=250GB
+
+#p B3LYP/def2TZVP Freq(ReadFC, FCHT, ReadFCHT, emission) geom=check guess=read
+
+Franck-Condon Herzberg-Teller Analysis of cationic phenanthrene for the emission spectra.
+
+1 2
+
+SpecHwHm=250 SpecRes=20 InpDEner=0.150
+
+Phenanthrene_c_1-2.chk
+

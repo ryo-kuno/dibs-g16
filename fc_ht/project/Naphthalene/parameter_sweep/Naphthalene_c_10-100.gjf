@@ -1,0 +1,119 @@
+%Mem=250GB
+%nprocshared=32
+%chk=Naphthalene_c_10-100-1.chk
+
+#p opt freq b3lyp/def2tzvp geom=connectivity
+
+Ground state optimization and frequency calculation for cationic naphthalene.
+
+1 2
+C                 -4.05901920   -0.74402571    0.00026300
+C                 -2.68621820   -0.74402571    0.00026300
+C                 -1.96428020    0.48109529    0.00026300
+C                 -2.68215020    1.70496129    0.00063300
+C                 -4.10356620    1.67558829    0.00078700
+C                 -4.77507120    0.47761329    0.00049700
+H                  0.00479280   -0.44386971    0.00002000
+H                 -4.61975020   -1.69037171    0.00018300
+H                 -2.12142920   -1.68834771    0.00003500
+C                 -0.54255320    0.51063829    0.00000000
+C                 -1.95940020    2.92968729    0.00074800
+H                 -4.65080720    2.63004429    0.00086900
+H                 -5.87470820    0.45124629    0.00059900
+C                 -0.58653920    2.92975529    0.00047500
+C                  0.12947280    1.70786329    0.00001600
+H                 -2.52385620    3.87422829    0.00100800
+H                 -0.02584720    3.87608629    0.00029700
+H                  1.22910080    1.73432829   -0.00016600
+
+1 2 1.5 6 1.5 8 1.0
+2 3 1.5 9 1.0
+3 4 1.5 10 1.5
+4 5 1.5 11 1.5
+5 6 1.5 12 1.0
+6 13 1.0
+7 10 1.0
+8
+9
+10 15 1.5
+11 14 1.5 16 1.0
+12
+13
+14 15 1.5 17 1.0
+15 18 1.0
+16
+17
+18
+
+--Link1--
+%Mem=250GB
+%NProcShared=32
+%oldchk=Naphthalene_c_10-100-1.chk
+%chk=Naphthalene_c_10-100-2.chk
+
+#p opt freq=savenormalmodes b3lyp/def2tzvp TD=(nstates=2, Root=1) geom=check                                                     
+
+Cationic naphthalene TD-DFT excitation/optimization freq calculation.                                                             
+
+1 2
+
+--Link1--
+%chk=Naphthalene_c_10-100-1.chk
+%NProcShared=32
+%Mem=250GB
+
+#p B3LYP/def2TZVP Freq(ReadFC, FC, ReadFCHT) geom=check guess=read
+
+Franck-Condon Analysis of neutral naphthalene for the absorption spectra.
+
+1 2
+
+SpecHwHm=100 SpecRes=10 InpDEner=0.150
+
+Naphthalene_c_10-100-2.chk
+
+--Link1--
+%chk=Naphthalene_c_10-100-1.chk
+%NProcShared=32
+%Mem=250GB
+
+#p B3LYP/def2TZVP Freq(ReadFC, FC, ReadFCHT, emission) geom=check guess=read
+
+Franck-Condon Analysis of neutral naphthalene for the emission spectra.
+
+1 2
+
+SpecHwHm=100 SpecRes=10 InpDEner=0.150
+
+Naphthalene_c_10-100-2.chk
+
+--Link1--
+%chk=Naphthalene_c_10-100-1.chk
+%NProcShared=32
+%Mem=250GB
+
+#p B3LYP/def2TZVP Freq(ReadFC, FCHT, ReadFCHT) geom=check guess=read
+
+Franck-Condon Herzberg-Teller Analysis of neutral naphthalene for the absorption spectra.
+
+1 2
+
+SpecHwHm=100 SpecRes=10 InpDEner=0.150
+
+Naphthalene_c_10-100-2.chk
+
+--Link1--
+%chk=Naphthalene_c_10-100-1.chk
+%NProcShared=32
+%Mem=250GB
+
+#p B3LYP/def2TZVP Freq(ReadFC, FCHT, ReadFCHT, emission) geom=check guess=read
+
+Franck-Condon Herzberg-Teller Analysis of neutral naphthalene for the emission spectra.
+
+1 2
+
+SpecHwHm=100 SpecRes=10 InpDEner=0.150
+
+Naphthalene_c_10-100-2.chk
+
