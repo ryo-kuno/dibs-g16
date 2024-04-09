@@ -62,13 +62,13 @@ Neutral naphthalene TD-DFT excitation/optimization freq calculation.
 %NProcShared=32
 %Mem=250GB
 
-#p B3LYP/def2TZVP Freq(ReadFC, FC, ReadFCHT, Print=Matrix=JK, TimeDependent) geom=check guess=read
+#p B3LYP/def2TZVP Freq(ReadFC, FC, ReadFCHT) geom=check guess=read
 
 Franck-Condon Analysis of neutral naphthalene for the absorption spectra.
 
 0 1
 
-SpecHwHm=250 SpecRes=20 InpDEner=0.150
+SpecHwHm=250 SpecRes=20 InpDEner=0.150 Print=(Spectra=All, Matrix=JK) TimeDependent
 
 Naphthalene_n_1-2.chk
 
@@ -77,13 +77,13 @@ Naphthalene_n_1-2.chk
 %NProcShared=32
 %Mem=250GB
 
-#p B3LYP/def2TZVP Freq(ReadFC, FC, ReadFCHT, emission, Print=Matrix=JK, TimeDependent) geom=check guess=read
+#p B3LYP/def2TZVP Freq(ReadFC, FC, ReadFCHT, emission) geom=check guess=read
 
 Franck-Condon Analysis of neutral naphthalene for the emission spectra.
 
 0 1
 
-SpecHwHm=250 SpecRes=20 InpDEner=0.150
+SpecHwHm=250 SpecRes=20 InpDEner=0.150 Print=(Spectra=All, Matrix=JK) TimeDependent
 
 Naphthalene_n_1-2.chk
 
@@ -92,13 +92,13 @@ Naphthalene_n_1-2.chk
 %NProcShared=32
 %Mem=250GB
 
-#p B3LYP/def2TZVP Freq(ReadFC, HT, ReadFCHT, Print=Matrix=JK, TimeDependent) geom=check guess=read
+#p B3LYP/def2TZVP Freq(ReadFC, HT, ReadFCHT) geom=check guess=read
 
 Herzberg-Teller Analysis of neutral naphthalene for the absorption spectra.
 
 0 1
 
-SpecHwHm=250 SpecRes=20 InpDEner=0.150
+SpecHwHm=250 SpecRes=20 InpDEner=0.150 Print=(Spectra=All, Matrix=JK) TimeDependent
 
 Naphthalene_n_1-2.chk
 
@@ -107,13 +107,13 @@ Naphthalene_n_1-2.chk
 %NProcShared=32
 %Mem=250GB
 
-#p B3LYP/def2TZVP Freq(ReadFC, HT, ReadFCHT, emission, Print=Matrix=JK, TimeDependent) geom=check guess=read
+#p B3LYP/def2TZVP Freq(ReadFC, HT, ReadFCHT, emission) geom=check guess=read
 
 Herzberg-Teller Analysis of neutral napthalene for the emission spectra.
 
 0 1
 
-SpecHwHm=250 SpecRes=20 InpDEner=0.150
+SpecHwHm=250 SpecRes=20 InpDEner=0.150 Print=(Spectra=All, Matrix=JK) TimeDependent
 
 Naphthalene_n_1-2.chk
 
@@ -122,13 +122,13 @@ Naphthalene_n_1-2.chk
 %NProcShared=32
 %Mem=250GB
 
-#p B3LYP/def2TZVP Freq(ReadFC, FCHT, ReadFCHT, Print=Matrix=JK, TimeDependent) geom=check guess=read
+#p B3LYP/def2TZVP Freq(ReadFC, FCHT, ReadFCHT) geom=check guess=read
 
 Franck-Condon Herzberg-Teller Analysis of neutral naphthalene for the absorption spectra.
 
 0 1
 
-SpecHwHm=250 SpecRes=20 InpDEner=0.150
+SpecHwHm=250 SpecRes=20 InpDEner=0.150 Print=(Spectra=All, Matrix=JK) TimeDependent
 
 Naphthalene_n_1-2.chk
 
@@ -137,13 +137,13 @@ Naphthalene_n_1-2.chk
 %NProcShared=32
 %Mem=250GB
 
-#p B3LYP/def2TZVP Freq(ReadFC, FCHT, ReadFCHT, emission, Print=Matrix=JK, TimeDependent) geom=check guess=read
+#p B3LYP/def2TZVP Freq(ReadFC, FCHT, ReadFCHT, emission) geom=check guess=read
 
 Franck-Condon Herzberg-Teller Analysis of neutral naphthalene for the emission spectra.
 
 0 1
 
-SpecHwHm=250 SpecRes=20 InpDEner=0.150
+SpecHwHm=250 SpecRes=20 InpDEner=0.150 Print=(Spectra=All, Matrix=JK) TimeDependent
 
 Naphthalene_n_1-2.chk
 
