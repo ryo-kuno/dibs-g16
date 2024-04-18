@@ -78,7 +78,7 @@ Ground state geometry optimization and frequency calculation of perylene.
 %chk=p_sto_1-2.chk
 %NProcShared=16
 %Mem=128GB
-
+/I1
 #p B3LYP/STO-3G TD=(NStates=2, Root=1) geom=check guess=read opt freq=savenormalmodes
 
 One point excitation calculation for the perylene molecule, followed by the excited state geometry optimization.
@@ -96,7 +96,7 @@ FC analysis for perylene, investigating the S1 PES and simulating the absorption
 
 0 1
 
-SpecHwHm=100 SpecRes=20 InpDEner=0.0965 Print=(Spectra=All,Matrix=JK) TimeDependent
+SpecHwHm=100 SpecRes=20 InpDEner=0.007793 Print=(Spectra=All,Matrix=JK) TimeDependent
 
 p_sto_1-2.chk
 
@@ -105,13 +105,13 @@ p_sto_1-2.chk
 %NProcShared=16
 %Mem=128GB
 
-#p B3LYP/STO-3G Freq(ReadFC, FCHT, ReadFCHT, emission) NoSymm geom=check guess=read 
+#p B3LYP/STO-3G Freq(ReadFC, FC, ReadFCHT, emission) NoSymm geom=check guess=read 
 
 FC analysis for perylene, investigating the S1 PES and simulating the absorption spectrum.
 
 0 1
 
-SpecHwHm=100 SpecRes=20 InpDEner=0.0965 Print=(Spectra=All,Matrix=JK) TimeDependent
+SpecHwHm=100 SpecRes=20 InpDEner=0.007793 Print=(Spectra=All,Matrix=JK) TimeDependent
 
 p_sto_1-2.chk
 
@@ -126,7 +126,7 @@ FC analysis for perylene, simulating the emission spectrum.
 
 0 1
 
-SpecHwHm=100 SpecRes=20 InpDEner=0.0965 Print=(Spectra=All,Matrix=JK) TimeDependent
+SpecHwHm=100 SpecRes=20 InpDEner=0.007793 Print=(Spectra=All,Matrix=JK) TimeDependent
 
 p_sto_1-2.chk
 
@@ -141,7 +141,7 @@ FC analysis for perylene, investigating the S1 PES and simulating the absorption
 
 0 1
 
-SpecHwHm=100 SpecRes=20 InpDEner=0.0965 Print=(Spectra=All,Matrix=JK) TimeDependent
+SpecHwHm=100 SpecRes=20 InpDEner=0.007793 Print=(Spectra=All,Matrix=JK) TimeDependent
 
 p_sto_1-2.chk
 
