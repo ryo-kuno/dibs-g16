@@ -1,4 +1,0 @@
-cp: cannot stat '/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Perylene/basissets/STO-3G/./p_pbe0_sto.gjf': No such file or directory
-/var/spool/PBS/mom_priv/jobs/9303964.pbs.SC: line 12: 756276 Segmentation fault      g16 p_pbe0_sto.gjf
-cp: cannot stat '*.log': No such file or directory
-cp: cannot stat '*.chk': No such file or directory
