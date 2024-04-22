@@ -1,8 +1,8 @@
-%chk=p_sto_1-1.chk
+%chk=p_pbe0_sto_1-1.chk
 %NProcShared=16
 %Mem=128GB
 
-#p B3LYP/STO-3G geom=connectivity opt freq
+#p PBE1PBE/STO-3G geom=connectivity opt freq
 
 Ground state geometry optimization and frequency calculation of perylene.
 
@@ -74,23 +74,23 @@ Ground state geometry optimization and frequency calculation of perylene.
  32
 
 --Link1--
-%oldchk=p_sto_1-1.chk
-%chk=p_sto_1-2.chk
+%oldchk=p_pbe0_sto_1-1.chk
+%chk=p_pbe0_sto_1-2.chk
 %NProcShared=16
 %Mem=128GB
 
-#p B3LYP/STO-3G TD=(NStates=2, Root=1) geom=check guess=read opt freq=savenormalmodes
+#p PBE1PBE/STO-3G TD=(NStates=2, Root=1) geom=check guess=read opt freq=savenormalmodes
 
 One point excitation calculation for the perylene molecule, followed by the excited state geometry optimization.
 
 0 1
 
 --Link1--
-%chk=p_sto_1-1.chk
+%chk=p_pbe0_sto_1-1.chk
 %NProcShared=16
 %Mem=128GB
 
-#p B3LYP/STO-3G Freq(ReadFC, FC, ReadFCHT) NoSymm geom=check guess=read 
+#p PB1PBE/STO-3G Freq(ReadFC, FC, ReadFCHT) NoSymm geom=check guess=read 
 
 FC analysis for perylene, investigating the S1 PES and simulating the absorption spectrum.
 
@@ -98,14 +98,14 @@ FC analysis for perylene, investigating the S1 PES and simulating the absorption
 
 SpecHwHm=50 SpecRes=20 InpDEner=0.0965 Print=(Spectra=All,Matrix=JK) TimeDependent
 
-p_sto_1-2.chk
+p_pbe0_sto_1-2.chk
 
 --Link1--
-%chk=p_sto_1-1.chk
+%chk=p_pbe0_sto_1-1.chk
 %NProcShared=16
 %Mem=128GB
 
-#p B3LYP/STO-3G Freq(ReadFC, FC, ReadFCHT, emission) NoSymm geom=check guess=read 
+#p PB1PBE/STO-3G Freq(ReadFC, FC, ReadFCHT, emission) NoSymm geom=check guess=read 
 
 FC analysis for perylene, investigating the S1 PES and simulating the emission spectrum.
 
@@ -113,14 +113,14 @@ FC analysis for perylene, investigating the S1 PES and simulating the emission s
 
 SpecHwHm=50 SpecRes=20 InpDEner=0.0965 Print=(Spectra=All,Matrix=JK) TimeDependent
 
-p_sto_1-2.chk
+p_pbe0_sto_1-2.chk
 
 --Link1--
-%chk=p_sto_1-1.chk
+%chk=p_pbe0_sto_1-1.chk
 %NProcShared=16
 %Mem=128GB
 
-#p B3LYP/STO-3G Freq(ReadFC, FCHT, ReadFCHT) NoSymm geom=check guess=read
+#p PB1PBE/STO-3G Freq(ReadFC, FCHT, ReadFCHT) NoSymm geom=check guess=read
 
 FCHT analysis for perylene, simulating the absorption spectrum.
 
@@ -128,14 +128,14 @@ FCHT analysis for perylene, simulating the absorption spectrum.
 
 SpecHwHm=50 SpecRes=20 InpDEner=0.0965 Print=(Spectra=All,Matrix=JK) TimeDependent
 
-p_sto_1-2.chk
+p_pbe0_sto_1-2.chk
 
 --Link1--
-%chk=p_sto_1-1.chk
+%chk=p_pbe0_sto_1-1.chk
 %NProcShared=16
 %Mem=128GB
 
-#p B3LYP/STO-3G Freq(ReadFC, FCHT, ReadFCHT, Emission) NoSymm geom=check guess=read 
+#p PB1PBE/STO-3G Freq(ReadFC, FCHT, ReadFCHT, Emission) NoSymm geom=check guess=read 
 
 FCHT analysis for perylene, simulating the emission spectrum.
 
@@ -143,5 +143,5 @@ FCHT analysis for perylene, simulating the emission spectrum.
 
 SpecHwHm=50 SpecRes=20 InpDEner=0.0965 Print=(Spectra=All,Matrix=JK) TimeDependent
 
-p_sto_1-2.chk
+p_pbe0_sto_1-2.chk
 
