@@ -96,7 +96,7 @@ FC analysis for perylene, investigating the S1 PES and simulating the absorption
 
 0 1
 
-SpecHwHm=100 SpecRes=20 InpDEner=0.0965 Print=(Spectra=All,Matrix=JK) TimeDependent
+SpecHwHm=50 SpecRes=20 InpDEner=0.0965 Print=(Spectra=All,Matrix=JK) TimeDependent
 
 p_def2_1-2.chk
 
@@ -111,7 +111,7 @@ FC analysis for perylene, investigating the S1 PES and simulating the emission s
 
 0 1
 
-SpecHwHm=100 SpecRes=20 InpDEner=0.0965 Print=(Spectra=All,Matrix=JK) TimeDependent
+SpecHwHm=50 SpecRes=20 InpDEner=0.0965 Print=(Spectra=All,Matrix=JK) TimeDependent
 
 p_def2_1-2.chk
 
@@ -126,7 +126,7 @@ FC analysis for perylene, simulating the absorption spectrum.
 
 0 1
 
-SpecHwHm=100 SpecRes=20 InpDEner=0.0965 Print=(Spectra=All,Matrix=JK) TimeDependent
+SpecHwHm=50 SpecRes=20 InpDEner=0.0965 Print=(Spectra=All,Matrix=JK) TimeDependent
 
 p_def2_1-2.chk
 
@@ -141,7 +141,7 @@ FC analysis for perylene, investigating the S1 PES and simulating the emission s
 
 0 1
 
-SpecHwHm=100 SpecRes=20 InpDEner=0.0965 Print=(Spectra=All,Matrix=JK) TimeDependent
+SpecHwHm=50 SpecRes=20 InpDEner=0.0965 Print=(Spectra=All,Matrix=JK) TimeDependent
 
 p_def2_1-2.chk
 
