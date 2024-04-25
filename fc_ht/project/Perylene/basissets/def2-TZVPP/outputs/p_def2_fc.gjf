@@ -1,0 +1,29 @@
+%chk=p_def2_1-1.chk
+%NProcShared=8
+%Mem=64GB
+
+#p B3LYP/Def2TZVPP Freq(ReadFC, FC, ReadFCHT) NoSymm geom=check guess=read 
+
+FC analysis for perylene, investigating the S1 PES and simulating the absorption spectrum.
+
+0 1
+
+SpecHwHm=50 SpecRes=20 InpDEner=0.0965 Print=(Spectra=All, Matrix=JK, AssignThresh=0.10, Color=sRGB) TimeDependent
+
+p_def2_1-2.chk
+
+--Link1--
+%chk=p_def2_1-1.chk
+%NProcShared=8
+%Mem=64GB
+
+#p B3LYP/Def2TZVPP Freq(ReadFC, FC, ReadFCHT, emission) NoSymm geom=check guess=read 
+
+FC analysis for perylene, investigating the S1 PES and simulating the emission spectrum.
+
+0 1
+
+SpecHwHm=50 SpecRes=20 InpDEner=0.0965 Print=(Spectra=All, Matrix=JK, AssignThresh=0.10, Color=sRGB) TimeDependent
+
+p_def2_1-2.chk
+

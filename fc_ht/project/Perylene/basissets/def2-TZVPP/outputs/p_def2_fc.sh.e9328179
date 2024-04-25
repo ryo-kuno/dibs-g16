@@ -1,0 +1,5 @@
+cp: cannot stat '/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Perylene/basissets/def2-TZVPP/*.gjf': No such file or directory
+cp: cannot stat '/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Perylene/basissets/def2-TZVPP/*.chk': No such file or directory
+/var/spool/PBS/mom_priv/jobs/9328179.pbs.SC: line 15: 2204963 Segmentation fault      g16 p_def2_fc.gjf
+cp: cannot stat '*.log': No such file or directory
+cp: cannot stat '*.chk': No such file or directory

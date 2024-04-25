@@ -1,0 +1,14 @@
+total 99107
+drwxr-sr-x. 2 rk820 hpc-mjbear     4096 Apr 24 21:36 outputs
+-rw-------. 1 rk820 hpc-mjbear   524288 Apr 24 19:41 p_def2_1-1.chk
+-rw-------. 1 rk820 hpc-mjbear 99340288 Apr 24 19:41 p_def2_1-2.chk
+-rw-r--r--. 1 rk820 hpc-mjbear      722 Apr 24 19:18 p_def2_fc.gjf
+-rw-------. 1 rk820 hpc-mjbear     7790 Apr 24 19:41 p_def2_fc.log
+-rw-r--r--. 1 rk820 hpc-mjbear      787 Apr 24 21:36 p_def2_fc.sh
+-rw-------. 1 rk820 hpc-mjbear      266 Apr 24 21:45 p_def2_fc.sh.e9328179
+-rw-------. 1 rk820 hpc-mjbear        0 Apr 24 21:45 p_def2_fc.sh.o9328179
+-rw-r--r--. 1 rk820 hpc-mjbear     4148 Apr 24 19:15 p_def2.gjf
+-rw-------. 1 rk820 hpc-mjbear  1514642 Apr 24 18:58 p_def2.log
+-rw-r--r--. 1 rk820 hpc-mjbear      654 Apr 17 11:50 p_def2.sh
+ Unable to open input file "p_def2_fc.gjf" or "p_def2_fc.gjf".
+For us, there is only the trying. The rest is not our business. ~T.S.Eliot

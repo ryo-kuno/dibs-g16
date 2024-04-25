@@ -1,8 +1,8 @@
-%chk=Azulene3-1.chk
+%chk=az_s0.chk
 %NProcShared=32
 %Mem=256GB
 
-#p CAM-B3LYP/TZVP geom=connectivity opt freq
+#p CAM-B3LYP/def2tzvp geom=connectivity opt freq
 
 Investigation of Azulene step 1: ground state optimization and frequency calculation.
 
@@ -46,44 +46,38 @@ Investigation of Azulene step 1: ground state optimization and frequency calcula
  18
 
 --Link1--
-%oldchk=Azulene3-1.chk
-%chk=Azulene3-2.chk
+%oldchk=az_s0.chk
+%chk=az_s1.chk
 %NProcShared=32
 %Mem=256GB
 
-#p CAM-B3LYP/TZVP TD=(nstates=3, Root=2) geom=check density=current opt freq=savenormalmodes
+#p CAM-B3LYP/def2TZVP TD=(nstates=3, Root=1) geom=check density=current opt freq=savenormalmodes
 
-Azulene vertical excitation and optimization, frequency calculation for investigation of the S1 PES.
+Azulene S1
 
 0 1
 
 --Link1--
-%chk=Azulene3-1.chk
+%oldchk=az_s0.chk
+%chk=az_s2.chk
 %NProcShared=32
 %Mem=256GB
 
-#p CAM-B3LYP/TZVP Freq(ReadFC, FC, ReadFCHT) NoSymm geom=check guess=read
+#p CAM-B3LYP/def2TZVP TD=(nstates=3, Root=2) geom=check density=current opt freq=savenormalmodes
 
-FC analysis for simulated absorption spectra for Azulene
+Azulene S2
 
 0 1
-
-SpecHwHm=400 SpecRes=20 InpDEner=0.100
-
-Azulene3-2.chk
 
 --Link1--
-%chk=Azulene3-1.chk
+%chk=az_s0.chk
 %NProcShared=32
 %Mem=256GB
 
-#p CAM-B3LYP/TZVP Freq(ReadFC, FC, ReadFCHT, Emission) NoSymm geom=check guess=read                                                        
+#p CAM-B3LYP/TZVP Freq(ReadFC, FC, ReadFCHT) NoSymm geom=check guess=read 
 
-FC analysis for simulated emission spectra for Azulene
+FC analysis of Azulene S0-s2 absorption.
 
 0 1
 
-SpecHwHm=400 SpecRes=20 InpDEner=0.100
-
-Azulene3-2.chk
-
+SpecHwHm=30 SpecRes=20 InpDEner=

@@ -1,0 +1,162 @@
+ Entering Gaussian System, Link 0=g16
+ Input=p_def2_fc.gjf
+ Output=p_def2_fc.log
+ Initial command:
+ /apps/gaussian/g16-c01-avx2/g16/l1.exe "/var/tmp/pbs.9327521.pbs/Gau-751816.inp" -scrdir="/var/tmp/pbs.9327521.pbs/"
+ Entering Link 1 = /apps/gaussian/g16-c01-avx2/g16/l1.exe PID=    751817.
+  
+ Copyright (c) 1988-2019, Gaussian, Inc.  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 16 program.  It is based on
+ the Gaussian(R) 09 system (copyright 2009, Gaussian, Inc.),
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 16, Revision C.01,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, 
+ G. A. Petersson, H. Nakatsuji, X. Li, M. Caricato, A. V. Marenich, 
+ J. Bloino, B. G. Janesko, R. Gomperts, B. Mennucci, H. P. Hratchian, 
+ J. V. Ortiz, A. F. Izmaylov, J. L. Sonnenberg, D. Williams-Young, 
+ F. Ding, F. Lipparini, F. Egidi, J. Goings, B. Peng, A. Petrone, 
+ T. Henderson, D. Ranasinghe, V. G. Zakrzewski, J. Gao, N. Rega, 
+ G. Zheng, W. Liang, M. Hada, M. Ehara, K. Toyota, R. Fukuda, 
+ J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, H. Nakai, 
+ T. Vreven, K. Throssell, J. A. Montgomery, Jr., J. E. Peralta, 
+ F. Ogliaro, M. J. Bearpark, J. J. Heyd, E. N. Brothers, K. N. Kudin, 
+ V. N. Staroverov, T. A. Keith, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. P. Rendell, J. C. Burant, S. S. Iyengar, 
+ J. Tomasi, M. Cossi, J. M. Millam, M. Klene, C. Adamo, R. Cammi, 
+ J. W. Ochterski, R. L. Martin, K. Morokuma, O. Farkas, 
+ J. B. Foresman, and D. J. Fox, Gaussian, Inc., Wallingford CT, 2019.
+ 
+ ******************************************
+ Gaussian 16:  ES64L-G16RevC.01  3-Jul-2019
+                24-Apr-2024 
+ ******************************************
+ %chk=p_def2_1-1.chk
+ %NProcShared=8
+ Will use up to    8 processors via shared memory.
+ %Mem=64GB
+ ----------------------------------------------------------------------
+ #p B3LYP/Def2TZVPP Freq(ReadFC, FC, ReadFCHT) NoSymm geom=check guess=
+ read
+ ----------------------------------------------------------------------
+ 1/29=2,38=1,172=1/1;
+ 2/12=2,15=1,40=1/2;
+ 7/8=1,25=11,30=1,71=10,121=1/16,18;
+ 99/5=5/99;
+ Leave Link    1 at Wed Apr 24 19:41:17 2024, MaxMem=  8589934592 cpu:               0.3 elap:               0.0
+ (Enter /apps/gaussian/g16-c01-avx2/g16/l101.exe)
+ ----------------------------------------------------------------------
+ FC analysis for perylene, investigating the S1 PES and simulating the 
+ absorption spectrum.
+ ----------------------------------------------------------------------
+ Structure from the checkpoint file:  "p_def2_1-1.chk"
+ FileIO operation on non-existent file.
+ FileIO: IOper= 2 IFilNo(1)=-20997 Len=          20 IPos=           0 Q=  140721661995232
+
+
+ dumping /fiocom/, unit = 1 NFiles =    16 SizExt =    524288 WInBlk =       512
+                   defal = F LstWrd =      659456 FType=2 FMxFil=10000
+
+ Number              0           501           502           598           801           988
+ Base           250880         43520        142336        146944        250368         65024
+ End            659456         44520        146441        146946        250374        135028
+ End1           659456         44544        146944        147456        250880        135168
+ Wr Pntr        250880         43520        142440        146944        250368         65024
+ Rd Pntr        250880         43520        142336        146944        250368        135028
+ Length         408576          1000          4105             2             6         70004
+ Int.Num             1             2             3             4             5             6
+
+ Number            989           991           992           993           994           995
+ Base            44544        135680        135168         43008         40448         42496
+ End             64544        142242        135178         43208         40478         42516
+ End1            65024        142336        135680         43520         40960         43008
+ Wr Pntr         44544        135680        135168         43008         40448         42496
+ Rd Pntr         44544        142242        135178         43208         40478         42516
+ Length          20000          6562            10           200            30            20
+ Int.Num             7             8             9            10            11            12
+
+ Number            996           997           998           999
+ Base            41472         41984         40960        147456
+ End             41672         42154         41160        249960
+ End1            41984         42496         41472        250368
+ Wr Pntr         41472         41984         41160        147456
+ Rd Pntr         41672         42154         41160        149960
+ Length            200           170           200        102504
+ Int.Num            13            14            15            16
+
+
+ dumping /fiocom/, unit = 2 NFiles =     1 SizExt =         0 WInBlk =       512
+                   defal = F LstWrd =       65536 FType=2 FMxFil=10000
+
+ Number              0
+ Base            40448
+ End             65536
+ End1            65536
+ Wr Pntr         40448
+ Rd Pntr         40448
+ Length          25088
+ Int.Num             1
+
+
+ dumping /fiocom/, unit = 3 NFiles =     1 SizExt =    524288 WInBlk =       512
+                   defal = F LstWrd =       65536 FType=2 FMxFil=10000
+
+ Number              0
+ Base            40448
+ End             65536
+ End1            65536
+ Wr Pntr         40448
+ Rd Pntr         40448
+ Length          25088
+ Int.Num             1
+ FileIO operation on non-existent file.
+ FileIO: IOper= 2 IFilNo(1)=-20997 Len=          20 IPos=           0 Q=  140721661995232
+ Error termination in NtrErr:
+ NtrErr Called from FileIO.
