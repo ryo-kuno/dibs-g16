@@ -71,7 +71,8 @@ FC absorption s1-s0
 SpecHwHm=30
 SpecRes=20
 InpDEner=0.153
-TimeDependent
+Print=(Spectra=All,Matrix=JK)
+TimeIndependent
 
 Naphthalene_n_1-2.chk
 
@@ -89,6 +90,7 @@ FC emission s1-s0
 SpecHwHm=30
 SpecRes=20
 InpDEner=0.153
+Print=(Spectra=All,Matrix=JK)
 TimeDependent
 
 Naphthalene_n_1-2.chk
@@ -107,6 +109,7 @@ FCHT Analysis of neutral naphthalene for the absorption spectra.
 SpecHwHm=250 
 SpecRes=20 
 InpDEner=0.153 
+Print=(Spectra=All,Matrix=JK)
 TimeDependent
 
 Naphthalene_n_1-2.chk
@@ -125,6 +128,7 @@ FCHT Analysis of neutral naphthalene for the emission spectra.
 SpecHwHm=250 
 SpecRes=20 
 InpDEner=0.153
+Print=(Spectra=All,Matrix=JK)
 TimeDependent
 
 Naphthalene_n_1-2.chk

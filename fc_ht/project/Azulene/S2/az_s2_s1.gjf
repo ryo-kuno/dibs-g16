@@ -74,10 +74,51 @@ Azulene S2
 %NProcShared=32
 %Mem=256GB
 
-#p CAM-B3LYP/TZVP Freq(ReadFC, FC, ReadFCHT) NoSymm geom=check guess=read 
+#p CAM-B3LYP/def2TZVP Freq(ReadFC, FC, ReadFCHT) geom=check guess=read
 
 FC analysis of Azulene S0-s2 absorption.
 
 0 1
 
-SpecHwHm=30 SpecRes=20 InpDEner=
+SpecHwHm=30 SpecRes=20 InpDEner=0.137 Print=(Spectra=All,Matrix=JK) TimeDependent
+
+--Link1--
+%chk=az_s0.chk
+%NProcShared=32
+%Mem=256GB
+
+#p CAM-B3LYP/def2TZVP Freq(ReadFC, FC, ReadFCHT) geom=check guess=read
+
+FC analysis fo Azulene S0-S2 emission.
+
+0 1
+
+SpecHwHm=30 SpecRes=20 InpDEner=0.137 Print=(Spectra=All,Matrix=JK) TimeDependent
+
+--Link1--
+%chk=az_s0.chk
+%NProcShared=32
+%Mem=256GB
+
+#p CAM-B3LYP/def2TZVP Freq(ReadFC, FCHT, ReadFCHT) geom=check guess=read
+
+FCHT analysis of Azulene S0-s2 absorption.
+
+0 1
+
+SpecHwHm=30 SpecRes=20 InpDEner=0.137 Print=(Spectra=All,Matrix=JK) TimeDependent
+
+--Link1--
+%chk=az_s0.chk
+%NProcShared=32
+%Mem=256GB
+
+#p CAM-B3LYP/def2TZVP Freq(ReadFC, FCHT, ReadFCHT) geom=check guess=read
+
+FCHT analysis fo Azulene S0-S2 emission.
+
+0 1
+
+SpecHwHm=30 SpecRes=20 InpDEner=0.137 Print=(Spectra=All,Matrix=JK) TimeDependent
+
+
