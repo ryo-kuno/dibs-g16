@@ -82,18 +82,22 @@ FC analysis of Azulene S0-s2 absorption.
 
 SpecHwHm=30 SpecRes=20 InpDEner=0.137 Print=(Spectra=All,Matrix=JK) TimeDependent
 
+az_s2.chk
+
 --Link1--
 %chk=az_s0.chk
 %NProcShared=32
 %Mem=256GB
 
-#p CAM-B3LYP/def2TZVP Freq(ReadFC, FC, ReadFCHT) geom=check guess=read
+#p CAM-B3LYP/def2TZVP Freq(ReadFC, FC, ReadFCHT, emission) geom=check guess=read
 
 FC analysis fo Azulene S0-S2 emission.
 
 0 1
 
 SpecHwHm=30 SpecRes=20 InpDEner=0.137 Print=(Spectra=All,Matrix=JK) TimeDependent
+
+az_s2.chk
 
 --Link1--
 %chk=az_s0.chk
@@ -108,6 +112,8 @@ FCHT analysis of Azulene S0-s2 absorption.
 
 SpecHwHm=30 SpecRes=20 InpDEner=0.137 Print=(Spectra=All,Matrix=JK) TimeDependent
 
+az_s2.chk
+
 --Link1--
 %chk=az_s0.chk
 %NProcShared=32
@@ -121,4 +127,5 @@ FCHT analysis fo Azulene S0-S2 emission.
 
 SpecHwHm=30 SpecRes=20 InpDEner=0.137 Print=(Spectra=All,Matrix=JK) TimeDependent
 
+az_s2.chk
 
