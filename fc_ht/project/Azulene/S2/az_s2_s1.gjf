@@ -2,7 +2,7 @@
 %NProcShared=32
 %Mem=256GB
 
-#p CAM-B3LYP/def2tzvp geom=connectivity opt freq
+#p CAM-B3LYP/def2tzvp geom=connectivity opt freq Population=Full IOp(9/40=3)
 
 Investigation of Azulene step 1: ground state optimization and frequency calculation.
 
@@ -51,7 +51,7 @@ Investigation of Azulene step 1: ground state optimization and frequency calcula
 %NProcShared=32
 %Mem=256GB
 
-#p CAM-B3LYP/def2TZVP TD=(nstates=3, Root=1) geom=check density=current opt freq=savenormalmodes
+#p CAM-B3LYP/def2TZVP TD=(nstates=5, Root=1) geom=check density=current opt freq=savenormalmodes Population=Full IOp(9/40=3)
 
 Azulene S1
 
@@ -63,7 +63,7 @@ Azulene S1
 %NProcShared=32
 %Mem=256GB
 
-#p CAM-B3LYP/def2TZVP TD=(nstates=3, Root=2) geom=check density=current opt freq=savenormalmodes
+#p CAM-B3LYP/def2TZVP TD=(nstates=5, Root=2) geom=check density=current opt freq=savenormalmodes Population=Full IOp(9/40=3)
 
 Azulene S2
 
@@ -80,7 +80,7 @@ FC analysis of Azulene S0-s2 absorption.
 
 0 1
 
-SpecHwHm=30 SpecRes=20 InpDEner=0.137 Print=(Spectra=All,Matrix=JK) TimeDependent
+SpecHwHm=100 SpecRes=20 InpDEner=0.137 Print=(Spectra=All,Matrix=JK)
 
 az_s2.chk
 
@@ -95,7 +95,7 @@ FC analysis fo Azulene S0-S2 emission.
 
 0 1
 
-SpecHwHm=30 SpecRes=20 InpDEner=0.137 Print=(Spectra=All,Matrix=JK) TimeDependent
+SpecHwHm=100 SpecRes=20 InpDEner=0.137 Print=(Spectra=All,Matrix=JK)
 
 az_s2.chk
 
@@ -110,7 +110,7 @@ FCHT analysis of Azulene S0-s2 absorption.
 
 0 1
 
-SpecHwHm=30 SpecRes=20 InpDEner=0.137 Print=(Spectra=All,Matrix=JK) TimeDependent
+SpecHwHm=100 SpecRes=20 InpDEner=0.137 Print=(Spectra=All,Matrix=JK)
 
 az_s2.chk
 
@@ -125,7 +125,7 @@ FCHT analysis fo Azulene S0-S2 emission.
 
 0 1
 
-SpecHwHm=30 SpecRes=20 InpDEner=0.137 Print=(Spectra=All,Matrix=JK) TimeDependent
+SpecHwHm=100 SpecRes=20 InpDEner=0.137 Print=(Spectra=All,Matrix=JK)
 
 az_s2.chk
 

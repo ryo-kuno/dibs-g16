@@ -2,7 +2,7 @@
 %nprocshared=32
 %chk=Naphthalene_n_1-1.chk
 
-#p opt freq b3lyp/def2tzvp geom=connectivity
+#p opt freq b3lyp/def2tzvp geom=connectivity Population=Full IOp(9/40=3)
 
 Ground state optimization and frequency calculation for neutral naphthalene.
 
@@ -51,7 +51,7 @@ H                  1.22910080    1.73432829   -0.00016600
 %oldchk=Naphthalene_n_1-1.chk
 %chk=Naphthalene_n_1-2.chk
 
-#p opt freq=savenormalmodes b3lyp/def2tzvp TD=(nstates=2, Root=1) geom=check                                                     
+#p opt freq=savenormalmodes b3lyp/def2tzvp TD=(nstates=5, Root=1) geom=check Population=Full IOp(9/40=3)                                                    
 
 Neutral naphthalene TD-DFT excitation/optimization freq calculation.                                                             
 
@@ -60,7 +60,7 @@ Neutral naphthalene TD-DFT excitation/optimization freq calculation.
 --Link1--
 %chk=Naphthalene_n_1-1.chk
 %NProcShared=32
-%Mem=256GB
+%Mem=250GB
 
 #p B3LYP/def2TZVP Freq(ReadFC, FC, ReadFCHT) geom=check guess=read
 
@@ -68,18 +68,16 @@ FC absorption s1-s0
 
 0 1
 
-SpecHwHm=30
+SpecHwHm=100
 SpecRes=20
 InpDEner=0.153
-Print=(Spectra=All,Matrix=JK)
-TimeIndependent
 
 Naphthalene_n_1-2.chk
 
 --Link1--
 %chk=Naphthalene_n_1-1.chk
 %NProcShared=32
-%Mem=256GB
+%Mem=250GB
 
 #p B3LYP/def2TZVP Freq(ReadFC, FC, ReadFCHT, emission) geom=check guess=read
 
@@ -87,18 +85,16 @@ FC emission s1-s0
 
 0 1
 
-SpecHwHm=30
+SpecHwHm=100
 SpecRes=20
 InpDEner=0.153
-Print=(Spectra=All,Matrix=JK)
-TimeDependent
 
 Naphthalene_n_1-2.chk
 
 --Link1--
 %chk=Naphthalene_n_1-1.chk
 %NProcShared=32
-%Mem=256GB
+%Mem=250GB
 
 #p B3LYP/def2TZVP Freq(ReadFC, FCHT, ReadFCHT) geom=check guess=read
 
@@ -106,18 +102,16 @@ FCHT Analysis of neutral naphthalene for the absorption spectra.
 
 0 1
 
-SpecHwHm=250 
+SpecHwHm=100
 SpecRes=20 
 InpDEner=0.153 
-Print=(Spectra=All,Matrix=JK)
-TimeDependent
 
 Naphthalene_n_1-2.chk
 
 --Link1--
 %chk=Naphthalene_n_1-1.chk
 %NProcShared=32
-%Mem=256GB
+%Mem=250GB
 
 #p B3LYP/def2TZVP Freq(ReadFC, FCHT, ReadFCHT, emission) geom=check guess=read
 
@@ -125,11 +119,9 @@ FCHT Analysis of neutral naphthalene for the emission spectra.
 
 0 1
 
-SpecHwHm=250 
+SpecHwHm=100
 SpecRes=20 
 InpDEner=0.153
-Print=(Spectra=All,Matrix=JK)
-TimeDependent
 
 Naphthalene_n_1-2.chk
 
