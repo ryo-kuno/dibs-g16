@@ -151,7 +151,7 @@ az_s2.chk
 
 #p CAM-B3LYP/def2TZVP Freq(ReadFC, FC, ReadFCHT, emission) geom=check guess=read
 
-FC analysis fo Azulene S1-S2 absorption.
+FC analysis fo Azulene S1-S2 emission.
 
 0 1
 
