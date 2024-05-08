@@ -1,0 +1,152 @@
+ Entering Gaussian System, Link 0=g16
+ Input=pc2_project.gjf
+ Output=pc2_project.log
+ Initial command:
+ /apps/gaussian/g16-c01-avx2/g16/l1.exe "/var/tmp/pbs.9396972.pbs/Gau-3142925.inp" -scrdir="/var/tmp/pbs.9396972.pbs/"
+ Entering Link 1 = /apps/gaussian/g16-c01-avx2/g16/l1.exe PID=   3142926.
+  
+ Copyright (c) 1988-2019, Gaussian, Inc.  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 16 program.  It is based on
+ the Gaussian(R) 09 system (copyright 2009, Gaussian, Inc.),
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 16, Revision C.01,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, 
+ G. A. Petersson, H. Nakatsuji, X. Li, M. Caricato, A. V. Marenich, 
+ J. Bloino, B. G. Janesko, R. Gomperts, B. Mennucci, H. P. Hratchian, 
+ J. V. Ortiz, A. F. Izmaylov, J. L. Sonnenberg, D. Williams-Young, 
+ F. Ding, F. Lipparini, F. Egidi, J. Goings, B. Peng, A. Petrone, 
+ T. Henderson, D. Ranasinghe, V. G. Zakrzewski, J. Gao, N. Rega, 
+ G. Zheng, W. Liang, M. Hada, M. Ehara, K. Toyota, R. Fukuda, 
+ J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, H. Nakai, 
+ T. Vreven, K. Throssell, J. A. Montgomery, Jr., J. E. Peralta, 
+ F. Ogliaro, M. J. Bearpark, J. J. Heyd, E. N. Brothers, K. N. Kudin, 
+ V. N. Staroverov, T. A. Keith, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. P. Rendell, J. C. Burant, S. S. Iyengar, 
+ J. Tomasi, M. Cossi, J. M. Millam, M. Klene, C. Adamo, R. Cammi, 
+ J. W. Ochterski, R. L. Martin, K. Morokuma, O. Farkas, 
+ J. B. Foresman, and D. J. Fox, Gaussian, Inc., Wallingford CT, 2019.
+ 
+ ******************************************
+ Gaussian 16:  ES64L-G16RevC.01  3-Jul-2019
+                 8-May-2024 
+ ******************************************
+ %chk=pc0.chk
+ %NProcShared=32
+ Will use up to   32 processors via shared memory.
+ %Mem=250GB
+ --------------------------------------------
+ #p B3LYP/Def2TZVP geom=connectivity opt freq
+ --------------------------------------------
+ 1/18=20,19=15,26=3,38=1,57=2/1,3;
+ 2/9=110,12=2,17=6,18=5,40=1/2;
+ 3/5=44,7=101,11=2,25=1,30=1,71=1,74=-5/1,2,3;
+ 4//1;
+ 5/5=2,38=5/2;
+ 6/7=2,8=2,9=2,10=2,28=1/1;
+ 7//1,2,3,16;
+ 1/18=20,19=15,26=3/3(2);
+ 2/9=110/2;
+ 99//99;
+ 2/9=110/2;
+ 3/5=44,7=101,11=2,25=1,30=1,71=1,74=-5/1,2,3;
+ 4/5=5,16=3,69=1/1;
+ 5/5=2,38=5/2;
+ 7//1,2,3,16;
+ 1/18=20,19=15,26=3/3(-5);
+ 2/9=110/2;
+ 6/7=2,8=2,9=2,10=2,19=2,28=1/1;
+ 99/9=1/99;
+ Leave Link    1 at Wed May  8 11:09:34 2024, MaxMem= 33554432000 cpu:               0.5 elap:               0.0
+ (Enter /apps/gaussian/g16-c01-avx2/g16/l101.exe)
+ ----------------------------------------------------------------------
+ Ground state geometry optimization and frequency calculation of peryle
+ ne.
+ ----------------------------------------------------------------------
+ Symbolic Z-matrix:
+ Charge =  1 Multiplicity = 2
+ C                    -1.20569  -3.39753  -0.00015 
+ C                     0.21957  -3.39753  -0.00015 
+ C                     0.90215  -2.16528  -0.00015 
+ C                     0.16572  -0.9405    0.00002 
+ C                    -1.24272  -0.96551  -0.00009 
+ C                    -1.9111   -2.22434  -0.00015 
+ C                     2.33104  -2.13991  -0.0001 
+ C                     0.8582    0.30964   0.00039 
+ C                     2.2871    0.33502   0.00079 
+ C                     3.02352  -0.88975   0.0005 
+ C                     2.96965   1.56728   0.00153 
+ C                     0.13231   1.51689   0.0006 
+ C                    -1.29206   1.4663    0.00029 
+ C                    -1.95537   0.26879  -0.00001 
+ H                    -3.05565   0.23636  -0.00016 
+ H                    -1.84819   2.41624   0.00036 
+ H                    -1.72776  -4.36662  -0.00016 
+ H                    -3.01184  -2.23099  -0.00015 
+ C                     3.05692  -3.34715  -0.00053 
+ C                     4.48129  -3.29656  -0.0005 
+ C                     5.1446   -2.09905   0.00035 
+ C                     4.43196  -0.86475   0.0009 
+ H                     5.03742  -4.24649  -0.00099 
+ H                     6.24488  -2.06662   0.0006 
+ C                     4.39491   1.56729   0.00232 
+ H                     4.91697   2.53639   0.00333 
+ C                     5.10033   0.39409   0.00191 
+ H                     6.20107   0.40077   0.00236 
+ H                     0.86079  -4.29132  -0.00027 
+ H                     2.50693  -4.29978  -0.00064 
+ H                     0.68229   2.46952   0.00102 
+ H                     2.38618   2.49978   0.00165 
+ 
+ End of file reading connectivity.
+ Error termination via Lnk1e in /apps/gaussian/g16-c01-avx2/g16/l101.exe at Wed May  8 11:09:35 2024.
+ Job cpu time:       0 days  0 hours  0 minutes  4.5 seconds.
+ Elapsed time:       0 days  0 hours  0 minutes  0.2 seconds.
+ File lengths (MBytes):  RWF=      6 Int=      0 D2E=      0 Chk=      1 Scr=      1

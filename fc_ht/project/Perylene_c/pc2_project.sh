@@ -1,6 +1,6 @@
 #!/bin/sh
 #PBS -l walltime=05:00:00
-#PBS -l select=1:ncpus=64:mem=512GB
+#PBS -l select=1:ncpus=32:mem=256GB
 
 module load "gaussian/g16-c01-avx2" 
 cp "/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Perylene_c/./pc2_project.gjf" ./
