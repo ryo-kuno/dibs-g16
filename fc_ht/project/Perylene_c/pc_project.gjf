@@ -1,6 +1,6 @@
 %chk=pc0.chk
-%NProcShared=32
-%Mem=250GB
+%NProcShared=64
+%Mem=500GB
 
 #p B3LYP/Def2TZVP geom=connectivity opt freq
 
@@ -76,8 +76,8 @@ Ground state geometry optimization and frequency calculation of perylene.
 --Link1--
 %oldchk=pc0.chk
 %chk=pc1.chk
-%NProcShared=32
-%Mem=250GB
+%NProcShared=64
+%Mem=500GB
 
 #p B3LYP/Def2TZVP TD=(NStates=5, Root=1) geom=check guess=read opt freq=savenormalmodes
 
@@ -87,8 +87,8 @@ One point excitation calculation for the perylene molecule, followed by the exci
 
 --Link1--
 %chk=pc0.chk
-%NProcShared=32
-%Mem=250GB
+%NProcShared=64
+%Mem=500GB
 
 #p B3LYP/Def2TZVP Freq(ReadFC, FC, ReadFCHT) geom=check guess=read 
 
@@ -102,8 +102,8 @@ pc1.chk
 
 --Link1--
 %chk=pc0.chk
-%NProcShared=32
-%Mem=250GB
+%NProcShared=64
+%Mem=500GB
 
 #p B3LYP/Def2TZVP Freq(ReadFC, FC, ReadFCHT, emission) geom=check guess=read 
 
@@ -117,8 +117,8 @@ pc1.chk
 
 --Link1--
 %chk=pc0.chk
-%NProcShared=32
-%Mem=250GB
+%NProcShared=64
+%Mem=500GB
 
 #p B3LYP/Def2TZVP Freq(ReadFC, FCHT, ReadFCHT) geom=check guess=read
 
@@ -132,8 +132,8 @@ pc1.chk
 
 --Link1--
 %chk=pc0.chk
-%NProcShared=32
-%Mem=250GB
+%NProcShared=64
+%Mem=500GB
 
 #p B3LYP/Def2TZVP Freq(ReadFC, FCHT, ReadFCHT, emission) geom=check guess=read 
 

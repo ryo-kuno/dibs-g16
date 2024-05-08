@@ -3,13 +3,13 @@
 #PBS -l select=1:ncpus=64:mem=512GB
 
 module load "gaussian/g16-c01-avx2" 
-cp "/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Perylene_c/./pc_project.gjf" ./
+cp "/rds/general/user/rk820/home/dibs-g16/fc_ht/project/Perylene_c/./pc2_project.gjf" ./
 
 #convert old checkpoints to latest (i.e. for g03 checkpoints generated before ~Dec 2009)
-#c8609 "pc_project.chk"
+#c8609 "pc2_project.chk"
 
 # no more pbsexec... running directly.
-g16 pc_project.gjf
+g16 pc2_project.gjf
 
 cp *.log  /rds/general/user/rk820/home/dibs-g16/fc_ht/project/Perylene_c/./ 
 cp *.chk  /rds/general/user/rk820/home/dibs-g16/fc_ht/project/Perylene_c/./
