@@ -1,8 +1,8 @@
 %chk=p_def2_1-1.chk
 %NProcShared=64
-%Mem=256GB
+%Mem=250GB
 
-#p B3LYP/Def2TZVPP geom=connectivity opt freq
+#p B3LYP/Def2TZVP geom=connectivity opt freq
 
 Ground state geometry optimization and frequency calculation of perylene.
 
@@ -77,9 +77,9 @@ Ground state geometry optimization and frequency calculation of perylene.
 %oldchk=p_def2_1-1.chk
 %chk=p_def2_1-2.chk
 %NProcShared=64
-%Mem=256GB
+%Mem=250GB
 
-#p B3LYP/Def2TZVPP TD=(NStates=2, Root=1) geom=check guess=read opt freq=savenormalmodes
+#p B3LYP/Def2TZVP TD=(NStates=2, Root=1) geom=check guess=read opt freq=savenormalmodes
 
 One point excitation calculation for the perylene molecule, followed by the excited state geometry optimization.
 
@@ -88,9 +88,9 @@ One point excitation calculation for the perylene molecule, followed by the exci
 --Link1--
 %chk=p_def2_1-1.chk
 %NProcShared=64
-%Mem=256GB
+%Mem=250GB
 
-#p B3LYP/Def2TZVPP Freq(ReadFC, FC, ReadFCHT) geom=check guess=read 
+#p B3LYP/Def2TZVP Freq(ReadFC, FC, ReadFCHT) geom=check guess=read 
 
 FC analysis for perylene, investigating the S1 PES and simulating the absorption spectrum.
 
@@ -103,9 +103,9 @@ p_def2_1-2.chk
 --Link1--
 %chk=p_def2_1-1.chk
 %NProcShared=64
-%Mem=256GB
+%Mem=250GB
 
-#p B3LYP/Def2TZVPP Freq(ReadFC, FC, ReadFCHT, emission) geom=check guess=read 
+#p B3LYP/Def2TZVP Freq(ReadFC, FC, ReadFCHT, emission) geom=check guess=read 
 
 FC analysis for perylene, investigating the S1 PES and simulating the emission spectrum.
 
@@ -118,9 +118,9 @@ p_def2_1-2.chk
 --Link1--
 %chk=p_def2_1-1.chk
 %NProcShared=64
-%Mem=256GB
+%Mem=250GB
 
-#p B3LYP/Def2TZVPP Freq(ReadFC, FCHT, ReadFCHT) geom=check guess=read
+#p B3LYP/Def2TZVP Freq(ReadFC, FCHT, ReadFCHT) geom=check guess=read
 
 FC analysis for perylene, simulating the absorption spectrum.
 
@@ -133,9 +133,9 @@ p_def2_1-2.chk
 --Link1--
 %chk=p_def2_1-1.chk
 %NProcShared=64
-%Mem=256GB
+%Mem=250GB
 
-#p B3LYP/Def2TZVPP Freq(ReadFC, FCHT, ReadFCHT, emission) geom=check guess=read 
+#p B3LYP/Def2TZVP Freq(ReadFC, FCHT, ReadFCHT, emission) geom=check guess=read 
 
 FC analysis for perylene, investigating the S1 PES and simulating the emission spectrum.
 
